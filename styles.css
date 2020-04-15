@@ -1,6 +1,10 @@
 body{
     background-color: rgb(49, 42, 71);
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 .header{
     display: grid;
     grid-template-columns: 20% 80%;
@@ -9,7 +13,6 @@ body{
 }
 .logo{
     width:100%;
-
 }
 .opciones{
     background-color: aliceblue;
@@ -34,7 +37,7 @@ body{
     border-right: royalblue 2px solid;
 }
 .main{
-    background-color: aliceblue;
+    background-color: rgb(15, 41, 65);
     height: 30%;
     margin-top: 50px;
 }
@@ -92,11 +95,11 @@ i{
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
+}
   
 .mySlides {
     display: none ;
-  }
+}
   
 .prev, .next {
     cursor: pointer;
@@ -105,40 +108,42 @@ i{
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: rgb(226, 13, 13);
+    color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
+}
   
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
+}
   
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-  }
+}
   
-.text {
-    color: #b41616;
+.text{
+    color: white;
     font-size: 15px;
     padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
+    position: relative;
+    top: 25px;
     width: 100%;
     text-align: center;
-  }
+}
   
 .numbertext {
-    color: #c51f1f;
-    font-size: 12px;
+    color: white;
+    font-size: 20px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
+    width: 100%;
+    text-align: center;
+}
   
 
 .dot {
@@ -150,25 +155,30 @@ i{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
+}
   
 .active, .dot:hover {
     background-color: #717171;
-  }
+}
   
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+}
   
 @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-  }
+}
   
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
-  }
+}
+.efectos{
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(8px);
+
+}
