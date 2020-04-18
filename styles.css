@@ -41,6 +41,36 @@ a{
     height: 100px;
     margin-top: 50px;
 }
+
+.rankings{
+    width: 100%;    
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5%;
+    height: 400px;
+}
+
+.tracks{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr;
+    gap: 5px;
+
+}
+.songs{
+    background-color: aqua;
+    border-radius: 5px;
+}
+.artists{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr;
+    gap: 5px;
+}
+.albums{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr;
+    gap: 5px;
+}
+
 .footer{
     background-color: aliceblue;
     display: grid;
@@ -91,7 +121,7 @@ i{
         width: 50%;
     }
 }
-.slideshow-container {
+/* .slideshow-container {
     max-width: 80%;
     position: relative; 
 }
@@ -177,9 +207,9 @@ i{
     to {opacity: 1}
 }
 .efectos{
-        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
 }
 .efecto{
     filter: invert(100%);
-}
+} */
