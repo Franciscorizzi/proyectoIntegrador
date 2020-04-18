@@ -38,7 +38,7 @@ a{
 }
 .main{
     background-color: rgb(15, 41, 65);
-    height: 30%;
+    height: 100px;
     margin-top: 50px;
 }
 .footer{
@@ -92,9 +92,8 @@ i{
     }
 }
 .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+    max-width: 80%;
+    position: relative; 
 }
   
 .mySlides {
@@ -178,7 +177,9 @@ i{
     to {opacity: 1}
 }
 .efectos{
-    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-    filter: blur(8px);
-
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+}
+.efecto{
+    filter: invert(100%);
 }
