@@ -1,5 +1,7 @@
 body{
-    background-color: rgb(49, 42, 71);
+    background-image: url(img/fondomadera.jpg);
+    background-repeat: no-repeat
+    background-size: 100%;
 }
 a{
     text-decoration: none;
