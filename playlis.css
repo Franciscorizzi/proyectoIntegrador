@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+    margin: 100px;
+}
 body{ 
     background-image: url(img/fondoazul.jpg);
     background-size: 100%;
+    margin: 0 auto;
     
 }
 h1{ 
@@ -10,3 +15,42 @@ h1{
     text-shadow: seashell;
     font-size: 50px;
 }
+.grid-container{
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    gap: 80px;
+    margin: 50px;
+}
+
+.header{ 
+    display: grid;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr ;
+    gap: 40px;
+    justify-content: space-around;
+    
+}
+.primero{ 
+    display: flex;
+    background-image: url(img/fondosi.JPG);
+    background-position: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    
+}
+.segundo{
+    display: grid;
+    margin: 30px;
+    display: flex;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(img/latina.jpeg);
+    
+    width: 300px;
+    height: 300px;
+    
+    
+ }
