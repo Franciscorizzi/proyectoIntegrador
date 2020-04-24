@@ -1,0 +1,12 @@
+body{ 
+    background-image: url(img/fondoazul.jpg);
+    background-size: 100%;
+    
+}
+h1{ 
+    color: seashell;
+    text-align: center;
+    text-size-adjust: 24;
+    text-shadow: seashell;
+    font-size: 50px;
+}
