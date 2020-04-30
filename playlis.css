@@ -1,10 +1,9 @@
 .grid-container{
     display: grid;
-    grid-template-rows: 20% 50% 20%;
+    grid-template-rows: 20% 60% 20%;
     gap: 200px;
-    margin: 50px;
-    display: flex;
-    flex-direction: row;
+    
+   
 }
 .logo{
     width:100%;
@@ -47,7 +46,7 @@ h1{
 
 .principal{ 
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr;
     gap: 40px;
     justify-content: space-around;
     align-items: center;
@@ -64,6 +63,7 @@ h1{
     font-size: 25px;
     width: 350px;
     height: 300px;
+    margin: 30px;
     
 }
 .segundo{
@@ -76,6 +76,7 @@ h1{
     height: 300px;
     display: flex;
     text-align: center;
+    margin: 30px;
     
  }
  .tercero{  
@@ -89,6 +90,7 @@ h1{
      height: 300px;
      display: flex;
      text-align: center;
+     margin: 30px;
  }
  p.audio{ 
      display: grid;
