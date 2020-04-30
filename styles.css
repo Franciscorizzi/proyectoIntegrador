@@ -42,6 +42,9 @@ a{
     background-color: rgb(15, 41, 65);
     height: 250px;
     margin-top: 50px;
+    padding-top: 100px;
+    padding-left: 200px;
+    font-size: 40px;
 }
 
 .rankings{
@@ -60,7 +63,12 @@ a{
 }
 .songs{
     background-color: royalblue;
+    width: 100%;
+    height: auto;
     border-radius: 5px;
+    text-align: left;
+    font-size: 25px;
+    padding-top: 25px;
 }
 .artists{
     display: grid;
@@ -94,7 +102,7 @@ a{
     width: 100%;
     grid-template-columns: 1fr 3fr 3fr 3fr;
     margin: auto;
-    margin-top: 750px;
+    margin-top: 780px;
     border-radius: 15px;
     text-align: justify;
     font-size: 10px;
