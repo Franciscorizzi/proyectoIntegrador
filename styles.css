@@ -1,7 +1,9 @@
 body{
+
     background-image: url(img/fondoazul.jpg);
     background-size: 100%;
     font-family: 'Josefin Sans', sans-serif;
+
 }
 a{
     text-decoration: none;
