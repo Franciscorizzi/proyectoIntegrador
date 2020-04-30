@@ -1,5 +1,8 @@
 body{
-    background-color: rgb(49, 42, 71);
+    background-image: url(img/fondoazul.jpg);
+    background-size: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 a{
     text-decoration: none;
@@ -22,12 +25,6 @@ a{
     width: auto;
     height: auto;
     border-radius: 15px;
-}
-.main{
-    background-color: rgb(15, 41, 65);
-    margin-top: 50px;
-    height: 600px;
-    width: 100%;
 }
 .op{
     border-right: royalblue 2px solid;
@@ -76,7 +73,8 @@ i{
     }
 }
 .fotoG {
-    background-color: white;
+    background-image: url(img/foto\ genero2.jpg);
+    background-size: cover;
     height: 200px;
     width: 200px;
     padding: 50px 50px 50px 50px;
@@ -97,12 +95,25 @@ i{
     position: absolute;
 }
 .listadoG {
-    background-color: rgb(89, 45, 131);
+    background-color:rgb(15, 41, 65);
     width: 1320px;
     height: 600PX;
     margin-left: 50px;
-    margin-top: 80px;
+    margin-top: 50px;
     color: cornsilk;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 50px;
+    
+}
+.listadoG h1 {
+    text-decoration: underline;
+}
+ol li {
+   font-size: 30px;
+}
+.listas {
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 }
