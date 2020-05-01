@@ -47,14 +47,16 @@ h1{
 .principal{ 
     display: grid;
     grid-template-columns: 0.3fr 0.3fr 0.3fr;
-    gap: 40px;
+    gap: 5px;
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
+    margin-bottom: auto;
+    position: relative;
     
 }
 .primero{ 
-    display: grid;
+    
     background-image: url(img/fondosi.JPG);
     background-position: center;
     justify-content: center;
@@ -64,23 +66,24 @@ h1{
     width: 350px;
     height: 300px;
     margin: 30px;
+    margin-bottom: auto;
+    position: bottom relative;
     
 }
 .segundo{
-    display: grid;
+    
     color:black;
     font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-image: url(img/latina.jpeg);
     width: 350px;
     height: 300px;
-    display: flex;
     text-align: center;
     margin: 30px;
     
  }
  .tercero{  
-     display: grid;
+     
      margin: 30px;
      background-image: url(img/fav.jpeg);
      color: cornsilk;
@@ -88,12 +91,11 @@ h1{
      font-family: Georgia, 'Times New Roman', Times, serif;
      width: 350px;
      height: 300px;
-     display: flex;
      text-align: center;
      margin: 30px;
  }
  p.audio{ 
-     display: grid;
+     
      text-align: center;
      
 
