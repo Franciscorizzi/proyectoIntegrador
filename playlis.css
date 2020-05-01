@@ -19,12 +19,12 @@
 
 .header{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% 60%;
     height: 50px;
     border-radius: 15px;
 }
 .logo{
-    width: 100%;;
+    width: auto;
     height: auto;
     
 }
