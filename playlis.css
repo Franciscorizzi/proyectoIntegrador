@@ -6,7 +6,7 @@
     grid-template-columns: 30% 30% 30%;
     text-align: center;
     width: auto;
-    height: 20%;
+    height: auto;
     border-radius: 15px;
 }
 
@@ -19,7 +19,7 @@
     border-radius: 15px;
 }
 .logo{
-    width: auto;
+    width: 100%;
     height: auto;
     
 }
@@ -118,4 +118,29 @@ i{
 }
 .deezer{
     width: 100px;
+}
+@media(min-width:320px){
+    .header{
+        height: 50px;
+    }
+    .logo{
+        height: 60px;
+        width: auto;
+        margin: auto;
+    }
+
+}
+@media(min-width:768px){
+    .header{
+        width: 70%;
+        margin: auto;
+    }
+    .footer{
+        width: 80%;
+    }
+}
+@media(min-width:1024px){
+    .header{
+        width: 50%;
+    }
 }
