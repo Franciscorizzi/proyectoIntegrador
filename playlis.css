@@ -17,17 +17,24 @@
     height: 50px;
     width: 100%;
     border-radius: 15px;
+    color: black;
+    text-decoration-line: none;
+    
 }
 .logo{
     width: 100%;
     height: auto;
     
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 body{ 
     background-image: url(img/fondoazul.jpg);
     background-size: 100%;
     margin: 0 auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     
 }
 h1{ 
@@ -64,13 +71,14 @@ h1{
     margin: 30px;
     margin-bottom: auto;
     position: bottom relative;
+    font-family: 'Josefin Sans', sans-serif;
     
 }
 .segundo{
     
     color:black;
     font-size: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Josefin Sans', sans-serif;
     background-image: url(img/latina.jpeg);
     width: 350px;
     height: 300px;
@@ -84,7 +92,7 @@ h1{
      background-image: url(img/fav.jpeg);
      color: cornsilk;
      font-size: 40px;
-     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-family: 'Josefin Sans', sans-serif;
      width: 350px;
      height: 300px;
      text-align: center;
