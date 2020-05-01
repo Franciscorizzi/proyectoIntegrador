@@ -9,7 +9,10 @@
     height: auto;
     border-radius: 15px;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
 
 .header{
     display: grid;
@@ -26,9 +29,10 @@
 body{ 
     background-image: url(img/fondoazul.jpg);
     background-size: 100%;
-    margin: 0 auto;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    font-family: 'Josefin Sans', sans-serif; 
+}
+.op{
+    border-right: royalblue 2px solid;
 }
 h1{ 
     color: seashell;
