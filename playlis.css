@@ -9,7 +9,10 @@
     height: auto;
     border-radius: 15px;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
 
 .header{
     display: grid;
@@ -33,9 +36,16 @@ a{
 body{ 
     background-image: url(img/fondoazul.jpg);
     background-size: 100%;
+<<<<<<< HEAD
+    font-family: 'Josefin Sans', sans-serif; 
+}
+.op{
+    border-right: royalblue 2px solid;
+=======
     margin: 0 auto;
     font-family: 'Josefin Sans', sans-serif;
     
+>>>>>>> d1bf61af45697b33eb7d77a6d7e2099dff266461
 }
 h1{ 
     color: seashell;
