@@ -136,8 +136,11 @@ i{
         width: auto;
         margin: auto;
     }
-
+    
 }
+    
+
+
 @media(min-width:768px){
     .header{
         width: 70%;
@@ -146,6 +149,8 @@ i{
     .footer{
         width: 80%;
     }
+    
+    
 }
 @media(min-width:1024px){
     .header{
