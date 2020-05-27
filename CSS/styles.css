@@ -1,12 +1,16 @@
 body{
-
-    background-image: url(img/fondoazul.jpg);
+    background-image: url(../img/fondoazul.jpg);
     background-size: 100%;
     font-family: 'Josefin Sans', sans-serif;
 }
 a{
     text-decoration: none;
     color: black;
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr 10fr 1fr;
+    height: 1600px;
 }
 .header{
     display: grid;
@@ -41,46 +45,55 @@ a{
 }
 .main{
     background-color: rgb(15, 41, 65);
-    height: 250px;
+    height: 315px;
     margin-top: 50px;
-    padding-top: 100px;
-    padding-left: 200px;
-    font-size: 40px;
+    width: 100%;
+    padding-top: 15px;
 }
 
 .rankings{
     width: 100%;    
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    gap: 5%;
-    height: 400px;
+    gap: 10%;
 }
 
 .tracks{
     display: grid;
-    grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr;
+    grid-template-rows: 3fr 10fr;
     gap: 5px;
-
-}
-.songs{
-    background-color: royalblue;
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    text-align: left;
-    font-size: 25px;
-    padding-top: 25px;
 }
 .artists{
     display: grid;
-    grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr;
+    grid-template-rows: 3fr 10fr;
     gap: 5px;
 }
 .albums{
     display: grid;
-    grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr;
+    grid-template-rows: 3fr 10fr;
     gap: 5px;
 }
+.topsongs{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    height: 500px;
+}
+ol{
+    height: 100%;
+}
+.songs{
+    margin-top: 20px;
+}
+li{
+    background-color: royalblue;
+    width: 100%;
+    height: 12%;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 25px;
+}
+
 .disco{
     padding: 10px;
 }
@@ -102,11 +115,11 @@ a{
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 3fr 3fr 3fr;
-    margin: auto;
-    margin-top: 780px;
+    margin:auto;
     border-radius: 15px;
     text-align: justify;
     font-size: 10px;
+    margin-bottom: 10px;
 }
 i{
     text-align: center;
@@ -118,48 +131,10 @@ i{
 .deezer{
     width: 100px;
 }
-@media(min-width:320px){
-    .header{
-        height: 50px;
-    }
-    .logo{
-        height: 60px;
-        width: auto;
-        margin: auto;
-    }
 
-}
-@media(min-width:768px){
-    .header{
-        width: 70%;
-        margin: auto;
-    }
-    .footer{
-        width: 80%;
-    }
-    .buscador{
-        width: 25%;
-        margin-left: 70%;
-    }
-    .rankings{
-        width: 70%;
-        margin: auto;
-    }
-}
-@media(min-width:1024px){
-    .header{
-        width: 50%;
-    }
-    .rankings{
-        width: 50%;
-        margin-left: 18%;
-        gap: 100px;
-    }
-    
-}
-/* .slideshow-container {
-    max-width: 80%;
-    position: relative; 
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
 }
   
 .mySlides {
@@ -210,7 +185,10 @@ i{
     text-align: center;
 }
   
-
+.puntitos{
+    position: relative;
+    z-index: 10px;
+}
 .dot {
     cursor: pointer;
     height: 15px;
@@ -245,7 +223,48 @@ i{
 .efectos{
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
+        height: 100%;
+        position: relative;
+        z-index: 5px;
 }
 .efecto{
     filter: invert(100%);
-} */
+}
+@media(min-width:320px){
+    .header{
+        height: 50px;
+    }
+    .logo{
+        height: 60px;
+        width: auto;
+        margin: auto;
+    }
+
+}
+@media(min-width:768px){
+    .header{
+        width: 70%;
+        margin: auto;
+    }
+    .footer{
+        width: 80%;
+    }
+    .buscador{
+        width: 25%;
+        margin-left: 70%;
+    }
+    .rankings{
+        width: 70%;
+        margin: auto;
+    }
+}
+@media(min-width:1024px){
+    .header{
+        width: 50%;
+    }
+    .rankings{
+        width: 50%;
+        margin: auto;
+    }
+    
+}
