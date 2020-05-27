@@ -34,19 +34,12 @@ a{
     color: black;
 }
 body{ 
-    background-image: url(img/fondoazul.jpg);
+    background-image: url(../img/fondoazul.jpg);
     background-size: 100%;
-<<<<<<< HEAD
     font-family: 'Josefin Sans', sans-serif; 
 }
 .op{
-    border-right: royalblue 2px solid;
-=======
-    margin: 0 auto;
-    font-family: 'Josefin Sans', sans-serif;
-    
->>>>>>> d1bf61af45697b33eb7d77a6d7e2099dff266461
-}
+ border-right: royalblue 2px solid;}
 h1{ 
     color: seashell;
     text-align: center;
@@ -70,7 +63,7 @@ h1{
 }
 .primero{ 
     
-    background-image: url(img/fondosi.JPG);
+    background-image: url(../img/fondosi.JPG);
     background-position: center;
     justify-content: center;
     color: whitesmoke;
@@ -89,7 +82,7 @@ h1{
     color:black;
     font-size: 40px;
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url(img/latina.jpeg);
+    background-image: url(../img/latina.jpeg);
     width: 350px;
     height: 300px;
     text-align: center;
@@ -99,7 +92,7 @@ h1{
  .tercero{  
      
      margin: 30px;
-     background-image: url(img/fav.jpeg);
+     background-image: url(../img/fav.jpeg);
      color: cornsilk;
      font-size: 40px;
      font-family: 'Josefin Sans', sans-serif;
