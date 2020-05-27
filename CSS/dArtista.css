@@ -97,22 +97,42 @@ i{
     font-size: 30px;
     text-align: center;
 }
+
+.tipo {
+    color: yellow;
+    text-align: center;
+    margin-top: -40px ;
+    font-size: 20px;
+}
 .seguidoresA h5{
     color: grey;
     font-size: 20px;
     height: 30px;
     text-align: center;
-    margin-top: -25px;
+    margin-top: -10px;
     
 }
 
+.linea {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.line {
+    display: block;
+    height: 1px;
+    width: 700px;
+    background-color:white;
+    margin-top: -80px;
+    margin-left: 300px;
+}
 .top5A {
    color: rgba(233, 229, 229, 0.897);
-   font-size: 25px;
-   margin-top: 100px;
+   font-size: 30px;
+   margin-top: 80px;
    margin-left: 50px;
-   
 }
+
 .top5A .cancion a {
     font-size: 25px;
     display: block;
@@ -121,3 +141,43 @@ i{
     border-bottom: grey 1px solid;
     
 }
+
+.linea2 {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.line2 {
+    display: block;
+    height: 1px;
+    width: 700px;
+    background-color:white;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+.albumesNombre{
+    color: rgba(233, 229, 229, 0.897);
+    font-size: 30px;
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
+
+.albumes {
+    display: flex;
+    justify-content: space-around;
+}
+.albumes img{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.albumes h5 {
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    color: rgb(238, 234, 234);
+    justify-content: center;
+}
+
