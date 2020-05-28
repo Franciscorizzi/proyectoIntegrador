@@ -51,8 +51,6 @@ h1{
 
 
 .main{ 
-    display: grid;
-    grid-template-columns: 0.3fr 0.3fr 0.3fr;
     gap: 15px;
     justify-content: space-around;
     align-items: center;
@@ -69,11 +67,10 @@ h1{
     color: whitesmoke;
     text-align: center;
     font-size: 25px;
-    width: 350px;
+    width: 320px;
+    margin: auto;
     height: 300px;
-    margin: 30px;
-    margin-bottom: auto;
-    position: bottom relative;
+    
     font-family: 'Josefin Sans', sans-serif;
     
 }
@@ -83,22 +80,24 @@ h1{
     font-size: 40px;
     font-family: 'Josefin Sans', sans-serif;
     background-image: url(../img/latina.jpeg);
-    width: 350px;
+    width: 320px;
     height: 300px;
     text-align: center;
-    margin: 30px;
+    margin: auto;
+
     
  }
  .tercero{  
      
-     margin: 30px;
+   
      background-image: url(../img/fav.jpeg);
      color: cornsilk;
      font-size: 40px;
      font-family: 'Josefin Sans', sans-serif;
-     width: 350px;
+     width: 320px;
      height: 300px;
      text-align: center;
+     margin: auto;
      
  }
  p.audio{ 
@@ -152,11 +151,20 @@ i{
     .footer{
         width: 80%;
     }
-    
+    .main{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
     
 }
 @media(min-width:1024px){
     .header{
         width: 50%;
     }
+    .main{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }
