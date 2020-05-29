@@ -1,14 +1,19 @@
 body{
-    background-color: rgb(49, 42, 71);
+    background-image: url(../img/fondoazul.jpg);
+    margin: 0 auto;
 }
 a{
     text-decoration: none;
     color: black;
 } 
+.container{
+    display: grid;
+    grid-template-rows: 1fr 15fr 1fr;
+    height: 2000px;
+}
 .header{
     display: grid;
     grid-template-columns: 20% 80%;
-    height: 50px;
     border-radius: 15px;
 }
 .logo{
@@ -23,15 +28,79 @@ a{
     height: auto;
     border-radius: 15px;
 }
-.main{
-    background-color: rgb(15, 41, 65);
-    margin-top: 50px;
-    height: 600px;
-    width: 100%;
-}
 .op{
     border-right: royalblue 2px solid;
 }
+.main{
+    display: grid;
+    grid-template-rows: 1fr 2fr 7fr 2fr 4fr;
+    margin-top: 20px;
+}
+.titulo{
+    text-align: center;
+    font-size: 40px;
+}
+h1{
+    color: white;
+}
+.destacados{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.dgrid{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    gap: 15px;
+}
+.fila{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.caja{
+    background-color:aliceblue;
+    width: 90%;
+    margin: auto;
+    height: 150px;
+    border-radius: 2px;
+    text-align: center;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.musica{
+    display: grid;
+    grid-template-rows: 1fr 14fr;
+}
+.mgrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+
+}
+
+.momentos{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+.mogrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+.shows{
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+}
+.sgrid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
 .footer{
     background-color: aliceblue;
     display: grid;
@@ -69,6 +138,7 @@ i{
     .footer{
         width: 80%;
     }
+
 }
 @media(min-width:1024px){
     .header{
