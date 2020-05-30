@@ -54,31 +54,6 @@ i{
 .deezer{
     width: 100px;
 }
-@media(min-width:320px){
-    .header{
-        height: 50px;
-    }
-    .logo{
-        height: 60px;
-        width: auto;
-        margin: auto;
-    }
-
-}
-@media(min-width:768px){
-    .header{
-        width: 70%;
-        margin: auto;
-    }
-    .footer{
-        width: 80%;
-    }
-}
-@media(min-width:1024px){
-    .header{
-        width: 50%;
-    }
-}
 .artista{
     display: grid;
     grid-template-rows: 1fr 3.1fr 0.5fr;
@@ -180,4 +155,41 @@ i{
     color: rgb(238, 234, 234);
     justify-content: center;
 }
+@media(min-width:320px){
+    .header{
+        height: 50px;
+    }
+    .logo{
+        height: 60px;
+        width: auto;
+        margin: auto;
+    }
 
+}
+@media(min-width:768px){
+    .header{
+        width: 70%;
+        margin: auto;
+    }
+    .footer{
+        width: 80%;
+    }
+    .buscador{
+        width: 25%;
+        margin-left: 70%;
+    }
+    .rankings{
+        width: 70%;
+        margin: auto;
+    }
+}
+@media(min-width:1024px){
+    .header{
+        width: 50%;
+    }
+    .rankings{
+        width: 50%;
+        margin: auto;
+    }
+    
+}

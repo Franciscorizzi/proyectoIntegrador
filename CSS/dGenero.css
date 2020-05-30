@@ -11,7 +11,7 @@ a{
     grid-template-columns: 20% 80%;
     height: 50px;
     border-radius: 15px;
-    z-index: 1;
+    z-index: 5;
 }
 .logo{
     width:100%;
@@ -46,6 +46,61 @@ i{
 .deezer{
     width: 100px;
 }
+
+
+.main {
+  margin-top: -140px;
+    
+}
+
+.foto img{
+    width: 100%;
+    height: 500px;
+    filter: blur(5px); 
+    margin-top: 30px;
+}
+
+.nombre {
+    color: white;
+    font-family: arial;
+    font-size: 50px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 4px 4px 10px black;
+}
+
+.subt {
+    margin-left: 50px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.nombreArtistas a{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   color: honeydew;
+   font-size: 30px;
+   
+}
+
+.listado ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listado ul  li div img{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.artistas {
+    margin: 40px 40px 40px 40px;
+}
+
 @media(min-width:320px){
     .header{
         height: 50px;
@@ -65,57 +120,22 @@ i{
     .footer{
         width: 80%;
     }
+    .buscador{
+        width: 25%;
+        margin-left: 70%;
+    }
+    .rankings{
+        width: 70%;
+        margin: auto;
+    }
 }
 @media(min-width:1024px){
     .header{
         width: 50%;
     }
-}
-.arriba {
-    background-image: url(../img/fotoGenero2.jpg);
-    width: 100%;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;  
-    filter: blur(4px); 
-}
-
-
-
-
-.nombreG {
-    color: white;
-    font-family: arial;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    text-emphasis: center;
-}
-
-
-.subt {
-    background-color:rgb(15, 41, 65);
-    width: 1320px;
-    height: 600PX;
-    margin-left: 50px;
-    margin-top: 50px;
-    color: cornsilk;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 20px;
-    padding-top: 10px;
-    padding-left: 50px;
+    .rankings{
+        width: 50%;
+        margin: auto;
+    }
     
-}
-ul li {
-   font-size: 25px;
-   width: 45%;
-}
-ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.listadoG .listas{
-   height: 100px;
 }
