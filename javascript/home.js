@@ -27,5 +27,31 @@ dots[slideIndex-1].className += " active";
 }
 
 
+let songs = document.querySelector(".canciones");
+console.log(songs);
+
+let albums = document.querySelector(".albumes");
+console.log(albums);
+
+let autores = document.querySelector(".cantores");
+console.log(autores);
+
+let element = document.querySelector(".songs");
+
+let proxi = " https://cors-anywhere.herokuapp.com/";
+let url = proxi+ "https://api.deezer.com";
+console.log(url);
+
+fetch(url)
+.then(function(response){
+    return response.json();
+})
+.then(function(datos){
+    console.log(datos);
+})
+.catch(function(error){
+    console.log(error);
+})
+
 
 

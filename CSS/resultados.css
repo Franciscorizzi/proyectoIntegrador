@@ -9,7 +9,7 @@ a{
 .container{
     display: grid;
     grid-template-rows: 1fr 15fr 1fr;
-    height: 2000px;
+    height: 750px;
 }
 .header{
     display: grid;
@@ -31,6 +31,9 @@ a{
 .op{
     border-right: royalblue 2px solid;
 }
+.main{
+    color: white;
+}
 .footer{
     background-color: aliceblue;
     display: grid;
@@ -49,6 +52,7 @@ i{
 .deezer{
     width: 100px;
 }
+
 @media(min-width:320px){
     .header{
         height: 50px;
