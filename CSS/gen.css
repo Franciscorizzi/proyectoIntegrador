@@ -50,7 +50,7 @@ h1{
 
 .dgrid{
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     gap: 15px;
 }
 .fila{
@@ -185,6 +185,13 @@ i{
         width: 70%;
         margin: auto;
     }
+    /* .destacados{
+        grid-template-rows: 1fr 8fr;
+    }
+    .dgrid{
+        grid-template-rows: 1fr 1fr;
+    } */
+    
     .footer{
         width: 80%;
     }
