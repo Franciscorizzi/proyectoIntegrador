@@ -13,6 +13,11 @@ a{
     text-decoration: none;
     color: black;
 }
+.container{
+    display: grid;
+    grid-row: 20% 50% 30% ;
+    height: 800px;
+}
 
 .header{
     display: grid;
@@ -34,7 +39,8 @@ a{
     color: black;
 }
 body{ 
-    background-image: url(../img/fondoazul.jpg);
+    background-image: url(../img/grisOscuro.jpg);
+    background-color: black;
     background-size: 100%;
     font-family: 'Josefin Sans', sans-serif; 
 }
@@ -48,6 +54,7 @@ h1{
     text-shadow: seashell;
     font-size: 50px;
 }
+
 
 
 .main{ 

@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/fondoazul.jpg);
+    background-image: url(../img/grisOscuro.jpg);
     margin: 0 auto;
 }
 a{
@@ -70,10 +70,60 @@ h1{
     font-size: 35px;
     font-weight: bold;
 }
+.caja1{
+    background-image: url(../img/destt.JPG);
+    background-position: center;
+    width: 90%;
+    margin: auto;
+    height: 150px;
+    border-radius: 2px;
+    text-align: center;
+    color:whitesmoke;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.caja2{
+    background-image: url(../img/mus.jpg);
+    background-position: center;
+    width: 90%;
+    margin: auto;
+    height: 150px;
+    border-radius: 2px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 35px;
+    font-weight: bold;
+}
+.caja3{
+    background-image: url(../img/momentss.jpg);
+    background-position: center;
+    width: 90%;
+    margin: auto;
+    height: 150px;
+    border-radius: 2px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 35px;
+    font-weight: bold;
+}
+.caja4{
+    background-image: url(../img/shows.jpg);
+    background-position: center;
+    width: 90%;
+    margin: auto;
+    height: 150px;
+    border-radius: 2px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 35px;
+    font-weight: bold;
+}
 
 .musica{
     display: grid;
     grid-template-rows: 1fr 14fr;
+    
 }
 .mgrid{
     display: grid;
