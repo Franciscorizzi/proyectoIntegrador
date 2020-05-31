@@ -27,7 +27,9 @@
     </div>
     <div class="buscador">
         <i class="fa fa-search" style="font-size: 28px;"></i>
-        <h2 class="search">Búsqueda</h2>
+        <form action="resultados.html" method="get">
+          <input type="text" name="search" placeholder="Buscar...">
+          <button type="submit">SEARCH</button>
     </div>
     <div class="main">
         <div class="slideshow-container"> 
@@ -59,7 +61,7 @@
           <img class="disc" src="../img/vinilo.jpg" alt="disco">
         </div>
         <div class="topsongs">
-          <ol>
+          <ol class="canciones">
         <li class="songs"><a href="dTrack.html"> Dance Monkey</a></li>
         <li class="songs"><a href="dTrack.html"> Blinding Lights</a></li>
         <li class="songs"><a href="dTrack.html"> Roses(Imanbek</a></li>
@@ -79,7 +81,7 @@
           <img class="disc" src="../img/vinilo.jpg" alt="disco">
         </div>
         <div class="topsongs">
-        <ol>
+        <ol class="cantores">
         <li class="songs"><a href="dArtista.html"> Tones and I</a></li>
         <li class="songs"><a href="dArtista.html"> The Weekend</a></li>
         <li class="songs"><a href="dArtista.html"> SAINT JHN</a></li>
@@ -99,7 +101,7 @@
           <img class="disc" src="../img/vinilo.jpg" alt="disco">
         </div>
         <div class="topsongs">
-        <ol>
+        <ol class="albumes">
         <li class="songs"><a href="dAlbum.html"> Dance Monkey</a></li>
         <li class="songs"><a href="dAlbum.html"> After Hours</a></li>
         <li class="songs"><a href="dAlbum.html"> Roses</a></li>
@@ -121,33 +123,6 @@
         <h3>Franco Mendelsohn</h3>
     </div>
   </div>
-    <script> 
-      var slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-      showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-      showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active"; 
-      }
-</script>
+  <script src="../javascript/home.js"></script>
 </body>
 </html>

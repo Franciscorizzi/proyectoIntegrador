@@ -1,0 +1,81 @@
+body{
+    background-image: url(../img/grisOscuro.jpg);
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+} 
+.container{
+    display: grid;
+    grid-template-rows: 1fr 15fr 1fr;
+    height: 750px;
+}
+.header{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border-radius: 15px;
+}
+.logo{
+    width:100%;
+}
+.opciones{
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    text-align: center;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+}
+.op{
+    border-right: royalblue 2px solid;
+}
+.main{
+    color: white;
+}
+.footer{
+    background-color: aliceblue;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 3fr 3fr 3fr;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    text-align: justify;
+    font-size: 10px;
+}
+i{
+    text-align: center;
+    padding-top: 5px;
+}
+.deezer{
+    width: 100px;
+}
+
+@media(min-width:320px){
+    .header{
+        height: 50px;
+    }
+    .logo{
+        height: 60px;
+        width: auto;
+        margin: auto;
+    }
+
+}
+@media(min-width:768px){
+    .header{
+        width: 70%;
+        margin: auto;
+    }
+    .footer{
+        width: 80%;
+    }
+
+}
+@media(min-width:1024px){
+    .header{
+        width: 50%;
+    }
+}

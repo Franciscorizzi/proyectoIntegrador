@@ -1,5 +1,6 @@
 body{
-   background-color: black;
+    background-image: url(../img/fondoazul.jpg);
+    background-size: 100%;
     font-family: 'Josefin Sans', sans-serif;
 
 }
@@ -52,31 +53,7 @@ i{
 .deezer{
     width: 100px;
 }
-@media(min-width:320px){
-    .header{
-        height: 50px;
-    }
-    .logo{
-        height: 60px;
-        width: auto;
-        margin: auto;
-    }
 
-}
-@media(min-width:768px){
-    .header{
-        width: 70%;
-        margin: auto;
-    }
-    .footer{
-        width: 80%;
-    }
-}
-@media(min-width:1024px){
-    .header{
-        width: 50%;
-    }
-}
 .track {
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -191,3 +168,42 @@ i{
    margin-left: 200px;
 
 }
+
+@media(min-width:320px){
+    .header{
+
+        height: 50px;
+    }
+
+    
+
+    
+
+    .logo{
+        height: 60px;
+        width: auto;
+        margin: auto;
+    }
+
+}
+@media(min-width:768px){
+    .header{
+        width: 70%;
+        margin: auto;
+    }
+
+    
+
+    .footer{
+        width: 80%;
+    }
+}
+@media(min-width:1026px){
+    .header{
+        width: 50%;
+    }
+    
+
+    
+}
+    

@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/fondoazul.jpg);
+    background-image: url(../img/grisOscuro.jpg);
     background-size: 100%;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -41,8 +41,20 @@ a{
 .op{
     border-right: royalblue 2px solid;
 }
+input{
+    background-color: royalblue;
+    border: royalblue;
+    height: 90%;
+    font-size: 18px;
+}
+::placeholder{
+    color: black;
+}
+button{
+    background-color: blue;
+    border: blue 2px solid;
+}
 .main{
-    background-color: rgb(15, 41, 65);
     height: 315px;
     margin-top: 50px;
     width: 100%;
