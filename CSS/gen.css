@@ -1,5 +1,6 @@
 body{
     background-image: url(../img/grisOscuro.jpg);
+    background-position: center;
     margin: 0 auto;
 }
 a{
@@ -81,6 +82,7 @@ h1{
     color:whitesmoke;
     font-size: 35px;
     font-weight: bold;
+    
 }
 
 .caja2{
