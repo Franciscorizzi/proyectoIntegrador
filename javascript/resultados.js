@@ -23,7 +23,7 @@ fetch(url)
 .then(function(datos){
    let lista = document.querySelector(".lista");
    let resultados = datos.data;
-
+    console.log(datos);
    resultados.forEach(function(resultado){
     lista.innerHTML += "<li style='height: 50px;'>" + resultado.name +"</li>"
    });

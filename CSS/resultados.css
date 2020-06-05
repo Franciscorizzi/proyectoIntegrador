@@ -8,7 +8,7 @@ a{
 } 
 .container{
     display: grid;
-    grid-template-rows: 1fr 15fr 1fr;
+    grid-template-rows: 1fr 1fr 15fr 1fr;
     height: 750px;
 }
 .header{
@@ -28,9 +28,39 @@ a{
     height: auto;
     border-radius: 15px;
 }
+.buscador{
+    background-color: royalblue;
+    width: 43%;
+    height: 50%;
+    margin-left: 58%;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+}
 .op{
     border-right: royalblue 2px solid;
 }
+input{
+    background-color: royalblue;
+    height: 100%;
+    border: blue 0px solid;
+    font-size: 18px;  
+    border-radius: 15px;
+}
+::placeholder{
+    color: black;
+}
+button{
+    background-color: royalblue;
+    border: blue 2px solid;
+    height: 110%;
+    border-radius: 15px;
+}
+
 .main{
     color: white;
 }
@@ -57,6 +87,7 @@ i{
     .header{
         height: 50px;
     }
+
     .logo{
         height: 60px;
         width: auto;
@@ -69,13 +100,23 @@ i{
         width: 70%;
         margin: auto;
     }
+    
     .footer{
         width: 80%;
     }
-
+    .buscador{
+        width: 25%;
+        margin-left: 70%;
+    }
+    .rankings{
+        width: 70%;
+        margin: auto;
+    }
 }
 @media(min-width:1024px){
     .header{
         width: 50%;
     }
+
+    
 }
