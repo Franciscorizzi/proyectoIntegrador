@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/gen.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/generos.css">
     <title>Lista de Géneros</title>
 </head>
 <body>
@@ -13,125 +16,19 @@
         <img class="logo" src="../img/logo3.png" alt="logo">
         </div>
         <div class="opciones">
-            <h3 class="op">Home</h3>
-            <h3 class="op">Géneros</h3>
-            <h3>Playlist</h3>
+            <h3 class="op"><a href="index.html">Home</a></h3>
+            <h3 class="op"><a href="generos.html">Géneros</a></h3>
+            <h3><a href="playlist.html">Playlist</a></h3>
         </div>
     </div>
+    <div class="buscador">
+        <form action="resultados.html" method="get">
+          <input type="text" name="search" placeholder="Buscar...">
+          <button type="submit"><i class="fa fa-search" style="font-size: 28px;"></i></button>
+    </div>
     <div class="main">
-        <div class="titulo">
-            <h1>Todos los canales</h1>
-        </div>
-        <div class="destacados">
-            <h1>Destacados</h1>
-            <div class="dgrid">
-                <div class="fila">
-                    <div class="caja1">En casa</div>
-                    <div class="caja1">Popular</div>
-                    <div class="caja1">Charts</div>
-                    <div class="caja1">Nuevos lanzamientos</div>
-                </div>
-                <div class="fila">
-                    <div class="caja1">Mixes</div>
-                    <div class="caja1">Originals</div>
-                    <div class="caja1">Deezer next</div>
-                    <div class="caja1">Niños</div>
-                </div>
-            </div>
-        </div>
-        <div class="musica">
-            <h1>Música</h1>
-            <div class="mgrid">
-                <div class="fila">
-                    <div class="caja2">Pop</div>
-                    <div class="caja2">Rock</div>
-                    <div class="caja2">Música latina</div>
-                    <div class="caja2">Reggeton</div>
-                </div>
-                <div class="fila">
-                    <div class="caja2">Clásica</div>
-                    <div class="caja2">Metal</div>
-                    <div class="caja2">Dance/EDM</div>
-                    <div class="caja2">Electrónica</div>
-                </div>
-                <div class="fila">
-                    <div class="caja2">Jazz</div>
-                    <div class="caja2">Música crisitana</div>
-                    <div class="caja2">Música mexicana</div>
-                    <div class="caja2">Reggae</div>
-                </div>
-                <div class="fila">
-                    <div class="caja2">Rap</div>
-                    <div class="caja2">K-pop</div>
-                    <div class="caja2">Soul/funk</div>
-                    <div class="caja2">Indie</div>
-                </div>
-                <div class="fila">
-                    <div class="caja2">Salsa</div>
-                    <div class="caja2">Música brasileña</div>
-                    <div class="caja2">Blues</div>
-                    <div class="caja2">Música asiática</div>
-                </div>
-                <div class="fila">
-                    <div class="caja2">Música africana</div>
-                    <div class="caja2">R&B</div>
-                    <div class="caja2">Vallenato</div>
-                    <div class="caja2">Bandas sonoras</div>
-                </div>
-                <div class="fila">
-                    <div class="caja2">Folk y música de cantautor</div>
-                    <div class="caja0"></div>
-                    <div class="caja0"></div>
-                    <div class="caja0"></div>
-                </div>
-            </div>
-        </div>
-        <div class="momentos">
-            <h1>Momentos</h1>
-            <div class="mogrid">
-                <div class="fila">
-                    <div class="caja3">Flashback</div>
-                    <div class="caja3">Chill</div>
-                    <div class="caja3">Romántico</div>
-                    <div class="caja3">Deporte</div>
-                </div>
-                <div class="fila">
-                    <div class="caja3">Fiesta</div>
-                    <div class="caja3">Momentos</div>
-                    <div class="caja3">En casa</div>
-                    <div class="caja0"></div>
-                </div>
-            </div>
-        </div>
-        <div class="shows">
-            <h1>Shows</h1>
-            <div class="sgrid">
-                <div class="fila">
-                    <div class="caja4">Podcasts para niños</div>
-                    <div class="caja4">Sociedad y cultura</div>
-                    <div class="caja4">Noticias y política</div>
-                    <div class="caja4">Negocios</div>
-                </div>
-                <div class="fila">
-                    <div class="caja4">Educación</div>
-                    <div class="caja4">Narración de cuentos</div>
-                    <div class="caja4">Humor</div>
-                    <div class="caja4">Cultura pop</div>
-                </div>
-                <div class="fila">
-                    <div class="caja4">Deporte</div>
-                    <div class="caja4">Estilo de vida y hobbies</div>
-                    <div class="caja4">Podcasts de música</div>
-                    <div class="caja4">Tecnología</div>
-                </div>
-                <div class="fila">
-                    <div class="caja4">Juegos</div>
-                    <div class="caja4">Ciencia y medicina</div>
-                    <div class="caja4">Espiritualidad y religión</div>
-                    <div class="caja0"></div>
-                </div>
-            </div>
-        </div>
+        <div class="der"></div>
+        <div class="izq"></div>
     </div>
     <div class="footer">
     
@@ -140,6 +37,7 @@
         <h3>Francisco Rizzi</h3>
         <h3>Franco Mendelsohn</h3>
     </div>
-</div>    
+</div> 
+<script src="../javascript/generos.js"></script>   
 </body>
 </html>

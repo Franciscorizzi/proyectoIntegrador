@@ -50,9 +50,9 @@ fetch(url)
         charts.innerHTML += '<div class="songs"><a href="dtrack.html?id='+ canciones.id +'">'+canciones.position +". " + canciones.title + '</a></div>'
     });
     artist.forEach(function(cantantes){
-        chartar.innerHTML += '<div class="songs"><a href="dartista.html">'+cantantes.position +". " + cantantes.name + '</a></div>'
+        chartar.innerHTML += '<div class="songs"><a href="dartista.html?id='+cantantes.id +'">'+cantantes.position +". " + cantantes.name + '</a></div>'
     });
     albums.forEach(function(albumes){
-        chartal.innerHTML += '<div class="songs"><a href="dalbum.html">'+albumes.position +". " + albumes.title + '</a></div>'
+        chartal.innerHTML += '<div class="songs"><a href="dalbum.html?id='+albumes.id+'">'+albumes.position +". " + albumes.title + '</a></div>'
     })
 })
