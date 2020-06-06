@@ -1,5 +1,6 @@
 body{
     background-image: url(../img/grisOscuro.jpg);
+    background-position: center;
     margin: 0 auto;
 }
 a{
@@ -9,7 +10,7 @@ a{
 .container{
     display: grid;
     grid-template-rows: 1fr 1fr 15fr 1fr;
-    height: 750px;
+    height: 2000px;
 }
 .header{
     display: grid;
@@ -28,6 +29,9 @@ a{
     height: auto;
     border-radius: 15px;
 }
+.op{
+    border-right: royalblue 2px solid;
+}
 .buscador{
     background-color: royalblue;
     width: 43%;
@@ -41,9 +45,7 @@ form{
     grid-template-columns: 1fr 1fr;
     border-radius: 15px;
 }
-.op{
-    border-right: royalblue 2px solid;
-}
+
 input{
     background-color: royalblue;
     height: 100%;
@@ -60,10 +62,31 @@ button{
     height: 110%;
     border-radius: 15px;
 }
-
 .main{
-    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
 }
+.der{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 15px;
+}
+.izq{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 15px;
+}
+.genre{
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-weight: bolder;
+    margin-top: 20px;
+    height: 135px;
+    border-radius: 5px;
+    text-align: center;
+}
+
 .footer{
     background-color: aliceblue;
     display: grid;
@@ -82,12 +105,10 @@ i{
 .deezer{
     width: 100px;
 }
-
 @media(min-width:320px){
     .header{
         height: 50px;
     }
-
     .logo{
         height: 60px;
         width: auto;
@@ -100,23 +121,36 @@ i{
         width: 70%;
         margin: auto;
     }
-    
-    .footer{
-        width: 80%;
-    }
     .buscador{
         width: 25%;
         margin-left: 70%;
     }
-    .rankings{
-        width: 70%;
-        margin: auto;
+    .footer{
+        width: 80%;
     }
+
 }
 @media(min-width:1024px){
     .header{
         width: 50%;
     }
-
-    
+    /* .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 90%;
+        gap: 15px;
+    } */
+    .der{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    }
+    .izq{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    }
+    .container{
+        height: 1000px;
+    }
 }

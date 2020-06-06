@@ -27,31 +27,32 @@ dots[slideIndex-1].className += " active";
 }
 
 
-let songs = document.querySelector(".canciones");
-console.log(songs);
 
-let albums = document.querySelector(".albumes");
-console.log(albums);
-
-let autores = document.querySelector(".cantores");
-console.log(autores);
-
-let element = document.querySelector(".songs");
-
-let proxi = " https://cors-anywhere.herokuapp.com/";
-let url = proxi+ "https://api.deezer.com";
+let proxi = "https://cors-anywhere.herokuapp.com/";
+let url = proxi +"https://api.deezer.com/chart/0";
 console.log(url);
 
 fetch(url)
 .then(function(response){
     return response.json();
 })
-.then(function(datos){
-    console.log(datos);
+.then(function(data){
+    console.log(data);
+    let tracks = data.tracks.data;
+    let charts = document.querySelector(".topsongs");
+    let artist = data.artists.data;
+    let  chartar = document.querySelector(".topartists");
+    let albums = data.albums.data;
+    let chartal = document.querySelector(".topalbums");
+    console.log(tracks);
+    tracks.forEach(function(canciones) {
+        console.log(canciones.title);
+        charts.innerHTML += '<div class="songs"><a href="dtrack.html?id='+ canciones.id +'">'+canciones.position +". " + canciones.title + '</a></div>'
+    });
+    artist.forEach(function(cantantes){
+        chartar.innerHTML += '<div class="songs"><a href="dartista.html?id='+cantantes.id +'">'+cantantes.position +". " + cantantes.name + '</a></div>'
+    });
+    albums.forEach(function(albumes){
+        chartal.innerHTML += '<div class="songs"><a href="dalbum.html?id='+albumes.id+'">'+albumes.position +". " + albumes.title + '</a></div>'
+    })
 })
-.catch(function(error){
-    console.log(error);
-})
-
-
-
