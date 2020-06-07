@@ -85,6 +85,8 @@ button{
     height: 135px;
     border-radius: 5px;
     text-align: center;
+    justify-content: center;
+    
 }
 
 .footer{
