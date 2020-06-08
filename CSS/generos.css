@@ -36,7 +36,7 @@ a{
     background-color: royalblue;
     width: 43%;
     height: 50%;
-    margin-left: 58%;
+    margin-left: 57%;
     margin-top: 50px;
     border-radius: 15px;
 }
@@ -123,8 +123,9 @@ i{
     }
     .buscador{
         width: 25%;
-        margin-left: 70%;
+        margin-left: 75%;
     }
+
     .footer{
         width: 80%;
     }
@@ -134,12 +135,7 @@ i{
     .header{
         width: 50%;
     }
-    /* .main{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        width: 90%;
-        gap: 15px;
-    } */
+
     .der{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
