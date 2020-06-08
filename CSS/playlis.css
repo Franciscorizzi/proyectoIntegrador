@@ -15,7 +15,7 @@ a{
 }
 .container{
     display: grid;
-    grid-row: 20% 50% 30% ;
+    grid-row: 1fr 1fr 5fr 2fr ;
     height: 800px;
 }
 
@@ -37,6 +37,38 @@ a{
 a{
     text-decoration: none;
     color: black;
+}
+.buscador{
+    background-color: royalblue;
+    width: 43%;
+    height: 50%;
+    margin-left: 58%;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+}
+.op{
+    border-right: royalblue 2px solid;
+}
+input{
+    background-color: royalblue;
+    height: 100%;
+    border: blue 0px solid;
+    font-size: 18px;  
+    border-radius: 15px;
+}
+::placeholder{
+    color: black;
+}
+button{
+    background-color: royalblue;
+    border: blue 2px solid;
+    height: 110%;
+    border-radius: 15px;
 }
 body{ 
     background-image: url(../img/grisOscuro.jpg);
@@ -158,6 +190,10 @@ i{
     }
     .footer{
         width: 80%;
+    }
+    .buscador{
+        width: 25%;
+        margin-left: 70%;
     }
     .main{
         display:grid;
