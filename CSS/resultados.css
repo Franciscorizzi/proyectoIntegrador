@@ -8,7 +8,7 @@ a{
 } 
 .container{
     display: grid;
-    grid-template-rows: 1fr 1fr 15fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 15fr 1fr;
     height: 750px;
 }
 .header{
@@ -60,9 +60,27 @@ button{
     height: 110%;
     border-radius: 15px;
 }
-
+.enunciado{
+    color: white;
+}
 .main{
     color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.izq{
+    border-right: 1px white solid;
+    color: white;
+}
+li a{
+    color: white;
+}
+.med{
+    border-right: 1px white solid;
 }
 .footer{
     background-color: aliceblue;
