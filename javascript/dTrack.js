@@ -34,45 +34,86 @@ fetch(url)
      "<img src = '" + data.album.cover_medium + "' alt= 'foto'>" + "<br>" + " <h5> "
      + data.album.title + "</h5> " +" </a>" ;
      
-     let player = document.querySelector('iframe') ;
-     player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idTrack + '&app_id=1'
+     //let player = document.querySelector('iframe') ;
+     //player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idTrack + '&app_id=1'
      
+
+     let playlist = [data]
+     let recuperoStorage = localStorage.getItem('playlist') ;
+
+     
+     let agregar = document.querySelector('.botT') ;
+     agregar.addEventListener('click', function(){
+        if(recuperoStorage === null){
+            window.localStorage.setItem('playlist',JSON.stringify(playlist)) ;
+        }else{
+            let nuevaPlaylist = JSON.parse(recuperoStorage) 
+   
+   
+            nuevaPlaylist.push(data) ;
+            window.localStorage.setItem('playlist',JSON.stringify(nuevaPlaylist))
+            
+        }
+        if(playlist.includes(idTrack)){
+                     let indiceEnElArray = playlist.indexOf(idTrack);
+                     playlist.splice(indiceEnElArray, 1);
+                     document.querySelector('.botT').innerHTML = 'ADD TO PLAYLIST' ;
+                     console.log(playlist);
+                 }else{
+                     playlist.push(idTrack);
+                     document.querySelector('.botT').innerHTML = 'REMOVE FROM PLAYLIST' ;
+            
+                 }
+            
+
+        agregar.innerHTML = 'REMOVE FROM PLAYLIST';
+        console.log(JSON.parse (recuperoStorage))
+
+
+     })
+     
+
+
+
+       
+
+
 
  })
  .catch(function(error){
      console.log(error) ;
  })
  //Agrego para poder meter en la playlist
+ 
+ 
 
- let recuperoStorage = localStorage.getItem('playlist') ;
- if(recuperoStorage == null){
-     playlist = [];
- }else{
-     playlist = JSON.parse(recuperoStorage) ;
- }
+ //}else{
+     //playlist = JSON.parse(recuperoStorage) ;
+ //}
 
- if(playlist.includes(idTrack)){
-     document.querySelector('.botT').innerHTML = 'REMOVE FROM PLAYLIST';
+ //if(playlist.includes(idTrack)){
+//      document.querySelector('.botT').innerHTML = 'REMOVE FROM PLAYLIST';
 
- }
- let agregar = document.querySelector('.botT') ;
- agregar.addEventListener('click', function(e){
-     e.preventDefault();
+//  }
+//  let agregar = document.querySelector('.botT') ;
+//  agregar.addEventListener('click', function(e){
+//      e.preventDefault();
+     
 
-     if(playlist.includes(idTrack)){
-         let indiceEnElArray = playlist.indexOf(idTrack);
-         playlist.splice(indiceEnElArray, 1);
-         document.querySelector('.botT').innerHTML = 'ADD TO PLAYLIST' ;
-         console.log(playlist);
-     }else{
-         playlist.push(idTrack);
-         document.querySelector('.botT').innerHTML = 'REMOVE FROM PLAYLIST' ;
+//      if(playlist.includes(idTrack)){
+//          let indiceEnElArray = playlist.indexOf(idTrack);
+//          playlist.splice(indiceEnElArray, 1);
+//          document.querySelector('.botT').innerHTML = 'ADD TO PLAYLIST' ;
+//          console.log(playlist);
+//      }else{
+//          playlist.push(idTrack);
+//          document.querySelector('.botT').innerHTML = 'REMOVE FROM PLAYLIST' ;
 
-     }
+//      }
 
-     let playlistParaStorage = JSON.stringify(playlist);
-     localStorage.setItem('playlist', playlistParaStorage) ;
-     console.log(localStorage) ; 
-     console.log(playlist) ;
- })
+//      let playlistParaStorage = JSON.stringify(playlist);
+//      localStorage.setItem('playlist', playlistParaStorage) ;
+//      console.log(localStorage) ; 
+//      console.log(playlist) ;
+//  })
  

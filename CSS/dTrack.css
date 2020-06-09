@@ -1,5 +1,5 @@
 body{
-    background-image: url(../img/fondoazul.jpg);
+    background-image: url(../img/grisOscuro.jpg);
     background-size: 100%;
     font-family: 'Josefin Sans', sans-serif;
 
@@ -148,6 +148,7 @@ i{
     background-color: rgb(2, 153, 153);
     border-radius: 30px;
     padding: 20px 30px 20px 30px;
+    border: none;
 }
 
 
