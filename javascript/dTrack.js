@@ -33,14 +33,10 @@ fetch(url)
      fotoChica.innerHTML = "<a href'dAlbum.html?id= " + data.album.id + "'> " + 
      "<img src = '" + data.album.cover_medium + "' alt= 'foto'>" + "<br>" + " <h5> "
      + data.album.title + "</h5> " +" </a>" ;
-      
-
-
-
-
-
-
-
-
+     
 
  })
+ .catch(function(error){
+     console.log(error) ;
+ })
+ 
