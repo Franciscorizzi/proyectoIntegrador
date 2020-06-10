@@ -52,7 +52,8 @@ i{
 .album {
     width: 100%;
     height: 500px;
-    background-color: rgb(53, 53, 53);
+    background-image: url(../img/grisOscuro.jpg);
+    background-size: 100%;
     margin-top: -60px;
     display: grid;
     grid-template-rows: 0.25fr 1fr 1fr;
