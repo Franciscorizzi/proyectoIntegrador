@@ -88,7 +88,12 @@ h1{
     font-size: 50px;
 }
 
-
+.clear{
+    background-color: aliceblue;
+    border: gainsboro 2px solid;
+    height: 110%;
+    border-radius: 15px;
+}
 
 .main{ 
     gap: 15px;
@@ -99,6 +104,7 @@ h1{
     position: relative;
     
 }
+
 .primero{ 
     
     background-image: url(../img/fondosi.JPG);
