@@ -1,10 +1,12 @@
 body{
     background-image: url(../img/grisOscuro.jpg);
+    background-position: center;
     margin: 0 auto;
 }
 a{
     text-decoration: none;
     color: black;
+    text-align: center;
 } 
 .container{
     display: grid;
@@ -81,6 +83,7 @@ h1{
     color:whitesmoke;
     font-size: 35px;
     font-weight: bold;
+    
 }
 
 .caja2{

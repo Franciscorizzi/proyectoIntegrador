@@ -1,5 +1,6 @@
 body{
     background-image: url(../img/grisOscuro.jpg);
+    background-position: center;
     margin: 0 auto;
 }
 a{
@@ -8,8 +9,8 @@ a{
 } 
 .container{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 15fr 1fr;
-    height: 750px;
+    grid-template-rows: 1fr 1fr 15fr 1fr;
+    height: 2000px;
 }
 .header{
     display: grid;
@@ -28,11 +29,14 @@ a{
     height: auto;
     border-radius: 15px;
 }
+.op{
+    border-right: royalblue 2px solid;
+}
 .buscador{
     background-color: royalblue;
     width: 43%;
     height: 50%;
-    margin-left: 58%;
+    margin-left: 57%;
     margin-top: 50px;
     border-radius: 15px;
 }
@@ -41,9 +45,7 @@ form{
     grid-template-columns: 1fr 1fr;
     border-radius: 15px;
 }
-.op{
-    border-right: royalblue 2px solid;
-}
+
 input{
     background-color: royalblue;
     height: 100%;
@@ -60,28 +62,33 @@ button{
     height: 110%;
     border-radius: 15px;
 }
-.enunciado{
-    color: white;
-}
 .main{
-    color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
 }
-h2{
-    text-align: center;
-    text-decoration: underline;
+.der{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 15px;
 }
 .izq{
-    border-right: 1px white solid;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 15px;
+}
+.genre{
     color: white;
+    text-shadow: 2px 2px 4px black;
+    font-weight: bolder;
+    margin-top: 20px;
+    height: 135px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    
 }
-li a{
-    color: white;
-}
-.med{
-    border-right: 1px white solid;
-}
+
 .footer{
     background-color: aliceblue;
     display: grid;
@@ -100,12 +107,10 @@ i{
 .deezer{
     width: 100px;
 }
-
 @media(min-width:320px){
     .header{
         height: 50px;
     }
-
     .logo{
         height: 60px;
         width: auto;
@@ -118,23 +123,32 @@ i{
         width: 70%;
         margin: auto;
     }
-    
-    .footer{
-        width: 80%;
-    }
     .buscador{
         width: 25%;
         margin-left: 75%;
     }
-    .rankings{
-        width: 70%;
-        margin: auto;
+
+    .footer{
+        width: 80%;
     }
+
 }
 @media(min-width:1024px){
     .header{
         width: 50%;
     }
 
-    
+    .der{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    }
+    .izq{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    }
+    .container{
+        height: 1000px;
+    }
 }

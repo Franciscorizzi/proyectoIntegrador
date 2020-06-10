@@ -6,6 +6,7 @@
     <title>Playlist</title>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href= "../CSS/playlis.css">
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -15,18 +16,28 @@
             </div>
             <div class="opciones">
                <a href="index.html"><h3 class="op">Home</h3></a>
-                <a href="dGenero.html"><h3 class="op">Géneros</h3></a>
+                <a href="generos.html"><h3 class="op">Géneros</h3></a>
                 <a href="playlist.html"><h3>Playlist</h3></a>
             </div>
         </div>
+         <div class="buscador">
+            <form action="resultados.html" method="get">
+                <input type="text" name="search" placeholder="Buscar...">
+                <button type="submit"><i class="fa fa-search" style="font-size: 28px;"></i></button>
+         </div>
         <h1>Playlist</h1>
+        <div class="clear">Clear</div>
         <div class="main">
           
          <div class="primero">
-                    <p>Nueva Playlist</p>
+                    <h4>Nueva Playlist</h4>
+                    <ul class="playlistWrapper">
+
+                    </ul>
                     </div>
          <div class="segundo">        
                  <p>Latinas
+                     
                      <audio controls>
                            <source src="../Audios/Shakira_Anuel_AA_-_Me_Gusta_Official_Video.mp3">
                          </audio> 
@@ -57,10 +68,14 @@
             <h3>Agustina Bierfass</h3>
             <h3>Francisco Rizzi</h3>
             <h3>Franco Mendelsohn</h3>
+            <div>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter-square"></i>
+            </div>
         </div>
     
     </div>
     
- 
+<script src="../JAVASCRIPT/playlist.js"></script>
 </body>
  </html>

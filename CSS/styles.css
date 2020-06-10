@@ -31,11 +31,15 @@ a{
 }
 .buscador{
     background-color: royalblue;
-    display: grid;
-    grid-template-columns: 30px auto;
     width: 43%;
+    height: 50%;
     margin-left: 58%;
     margin-top: 50px;
+    border-radius: 15px;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border-radius: 15px;
 }
 .op{
@@ -43,16 +47,19 @@ a{
 }
 input{
     background-color: royalblue;
-    border: royalblue;
-    height: 90%;
-    font-size: 18px;
+    height: 100%;
+    border: blue 0px solid;
+    font-size: 18px;  
+    border-radius: 15px;
 }
 ::placeholder{
     color: black;
 }
 button{
-    background-color: blue;
+    background-color: royalblue;
     border: blue 2px solid;
+    height: 110%;
+    border-radius: 15px;
 }
 .main{
     height: 315px;
@@ -84,20 +91,32 @@ button{
     gap: 5px;
 }
 
-ol{
-    background-color: royalblue;
+.topsongs{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     border-radius: 5px;
     text-align: left;
     font-size: 25px;
-    gap: 20px;
-
+}
+.topartists{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 25px;
+}
+.topalbums{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 25px;
 }
 
 .songs{
+    background-color: royalblue;
     width: 100%;
-    height: 75px;
+    height: 85px;
     border-radius: 5px;
     text-align: left;
     font-size: 25px;
@@ -129,6 +148,7 @@ ol{
     border-radius: 15px;
     text-align: justify;
     font-size: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 i{
@@ -263,7 +283,7 @@ i{
     }
     .buscador{
         width: 25%;
-        margin-left: 70%;
+        margin-left: 75%;
     }
     .rankings{
         width: 70%;
@@ -274,9 +294,6 @@ i{
     .header{
         width: 50%;
     }
-    .rankings{
-        width: 50%;
-        margin: auto;
-    }
+
     
 }
