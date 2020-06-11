@@ -56,7 +56,7 @@ fetch(urla)
     console.log();
     
     respuesta.forEach(function(albumes){
-        albumcitos.innerHTML += "<div class='albumx'><a href='dalbum.html?id="+albumes.id+"'><img src='"+albumes.cover+"' alt='foto'><br><h5>"+albumes.title+"</h5></a></div>";
+        albumcitos.innerHTML += "<div class='albumx'><a href='dalbum.html?id="+albumes.id+"'><img src='"+albumes.cover_small+"' alt='foto'><br><h5>"+albumes.title+"</h5></a></div>";
         
     })
 })
