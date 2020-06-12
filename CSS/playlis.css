@@ -1,7 +1,6 @@
 
 
 .opciones{
-    background-color: aliceblue;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     text-align: center;
@@ -17,6 +16,13 @@ a{
     display: grid;
     grid-row: 1fr 1fr 5fr 2fr ;
     height: 800px;
+}
+.opciones a{
+    color: grey;
+    font-size: 25px;
+}
+.opciones a:hover {
+    color: white;
 }
 
 .header{

@@ -26,8 +26,6 @@ slides[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " active"; 
 }
 
-
-
 let proxi = "https://cors-anywhere.herokuapp.com/";
 let url = proxi +"https://api.deezer.com/chart/0";
 console.log(url);

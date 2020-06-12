@@ -33,6 +33,10 @@ fetch(urlar)
     console.log(error);
 })
 
+
+
+
+
 let urlt = proxi+ "https://api.deezer.com/search/track?q="+ busqueda;
 
 fetch(urlt)
@@ -50,6 +54,12 @@ fetch(urlt)
 .catch(function(error){
     console.log(error);
 })
+
+
+
+
+
+
 
 let urlal = proxi+ "https://api.deezer.com/search/album?q="+ busqueda;
 
