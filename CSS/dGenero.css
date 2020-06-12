@@ -17,7 +17,8 @@ a{
     width:100%;
 }
 .opciones{
-    background-color: aliceblue;
+    background-color: white;
+    opacity: 0.4;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     text-align: center;
@@ -70,6 +71,8 @@ i{
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 4px 4px 10px black;
+    width: 1000px;
+    text-align: center;
 }
 
 .subt {
@@ -84,8 +87,11 @@ i{
     margin-top: 20px;
    color: honeydew;
    font-size: 30px;
+   width: 250px;
    
 }
+
+
 
 .listado ul {
     display: flex;
