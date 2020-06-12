@@ -23,7 +23,7 @@ fetch(url)
     let seguidoresA = document.querySelector(".seguidoresA");
     seguidoresA.innerHTML = "<h5>Seguidores: "+data.nb_fan+"</h5>";
     let fondo = document.querySelector(".main");
-    fondo.style.backgroundImage = "url("+data.picture_big+ ")";
+    fondo.style.backgroundImage = "url("+data.picture_xl+ ")";
 })
 let urlt =proxi+ "https://api.deezer.com/artist/"+idartist+"/top?limit=5";
 console.log(urlt);
@@ -56,7 +56,7 @@ fetch(urla)
     console.log();
     
     respuesta.forEach(function(albumes){
-        albumcitos.innerHTML += "<div class='albumx'><a href='dalbum.html?id="+albumes.id+"'><img src='"+albumes.cover_small+"' alt='foto'><br><h5>"+albumes.title+"</h5></a></div>";
+        albumcitos.innerHTML += "<div class='albumx'><a href='dalbum.html?id="+albumes.id+"'><img src='"+albumes.cover_medium+"' alt='foto'><br><h5>"+albumes.title+"</h5></a></div>";
         
     })
 })

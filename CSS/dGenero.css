@@ -17,13 +17,19 @@ a{
     width:100%;
 }
 .opciones{
-    background-color: aliceblue;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     text-align: center;
     width: auto;
     height: auto;
     border-radius: 15px;
+}
+.opciones a{
+    color: grey;
+    font-size: 25px;
+}
+.opciones a:hover {
+    color: white;
 }
 .op{
     border-right: royalblue 2px solid;

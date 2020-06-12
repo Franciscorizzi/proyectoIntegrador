@@ -21,7 +21,6 @@ a{
     width:100%;
 }
 .opciones{
-    background-color: aliceblue;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     text-align: center;
@@ -31,6 +30,13 @@ a{
 }
 .op{
     border-right: royalblue 2px solid;
+}
+.opciones a{
+    color: grey;
+    font-size: 25px;
+}
+.opciones a:hover {
+    color: white;
 }
 .buscador{
     background-color: royalblue;
