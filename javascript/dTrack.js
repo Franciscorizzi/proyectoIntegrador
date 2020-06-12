@@ -24,13 +24,13 @@ fetch(url)
      "<h5>" + data.artist.name + "</h5> </a>"
 
      let fecha = document.querySelector('.fechaT') ;
-     fecha.innerHTML = data.release_date;
+     fecha.innerHTML = data.duration+"s";
      
      let fotoGrande = document.querySelector ('.fotoAlbumT') ;
      fotoGrande.innerHTML = "<img src= '" + data.album.cover_big + "' alt='foto'></img> " ;
 
      let fotoChica = document.querySelector ('.album') ;
-     fotoChica.innerHTML = "<a href'dAlbum.html?id= " + data.album.id + "'> " + "<img src = '" + data.album.cover_medium + "' alt= 'foto'>" + "<br>" + " <h5> "+ data.album.title + "</h5> " +" </a>" ;
+     fotoChica.innerHTML = "<a href='dAlbum.html?id= " + data.album.id + "'> " + "<img src = '" + data.album.cover_medium + "' alt= 'foto'>" + "<br>" + " <h5> "+ data.album.title + "</h5> " +" </a>" ;
      
      //let player = document.querySelector('iframe') ;
      //player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idTrack + '&app_id=1'

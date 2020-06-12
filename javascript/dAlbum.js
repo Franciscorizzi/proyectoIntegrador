@@ -19,7 +19,7 @@ fetch(url)
    let fotoAl = document.querySelector(".fotoAl");
    fotoAl.innerHTML = '<div>' + '<img src="' +data.cover+ '"' + 'alt="">' + '</div>';
    let artista = document.querySelector('.artista');
-   artista.innerHTML = '<a href="dArtista.html?id="' + data.artist.id + '">' + '<h5>' + data.artist.name + '</h5>' + '</a>';
+   artista.innerHTML = '<a href="dArtista.html?id=' + data.artist.id + '">' + '<h5>' + data.artist.name + '</h5>' + '</a>';
     let fecha = document.querySelector(".fecha");
     fecha.innerHTML = '<h5>' + data.release_date +'</h5>';
    
@@ -27,7 +27,7 @@ fetch(url)
     let listados = document.querySelector('.listados ol');
    
     datos.forEach(function(canciones){
-        listados.innerHTML += '<div>'+'<a href="dtrack.html?id='+ canciones.id +'">' + '<li>' + canciones.title + '</li>' + '</a>' + '</div>';
+        listados.innerHTML += '<div class="linea"> <div class="line"></div></div>' +'<div>'+'<a href="dtrack.html?id='+ canciones.id +'">' + '<li>' + canciones.title + '</li>' + '</a>' + '</div>';
     })
     
     
