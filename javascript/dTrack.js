@@ -25,7 +25,7 @@ fetch(url)
      "<h5>" + data.artist.name + "</h5> </a>"
 
      let fecha = document.querySelector('.fechaT') ;
-     fecha.innerHTML = data.release_date;
+     fecha.innerHTML = data.duration+"s";
      
      let fotoGrande = document.querySelector ('.fotoAlbumT') ;
      fotoGrande.innerHTML = "<a href = '../HTML/dAlbum.html?id= " + data.album.id + "'> " + 
@@ -46,34 +46,64 @@ fetch(url)
      //let player = document.querySelector('iframe') ;
      //player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idTrack + '&app_id=1'
     })
+    .catch(function(error){
+        console.log(error) ;
+})
 
-     let playlist = []
-     let recuperoStorage = localStorage.getItem('playlist') ;
+let playlist = []
+let recuperoStorage = localStorage.getItem('playlist') ;
+if(recuperoStorage == null){
+    playlist = [];
+}else {
+    playlist = JSON.parse(recuperoStorage) ;
+}
 
-     let agregar = document.querySelector('.botT') ;
-     agregar.addEventListener('click', function(){
-        if(recuperoStorage == null){
-            window.localStorage.setItem('playlist',JSON.stringify(playlist)) ;
-            console.log(localStorage)
-        }else{
-            let nuevaPlaylist = JSON.parse(recuperoStorage) 
-            nuevaPlaylist.push(data.id) ;
-            nuevaPlaylist=window.localStorage.setItem('playlist',JSON.stringify(nuevaPlaylist))
-            console.log(localStorage)
+if(playlist.includes(idTrack)){
+    document.querySelector('.botT').innerHTML = 'REMOVE FROM PLAYLIST'
+}
+let agregar = document.querySelector('.botT') ;
+agregar.addEventListener('click', function(){
+    if(playlist.includes(idTrack)){
+        let indiceEnElArray = playlist.indexOf(idTrack);
+        playlist.splice(indiceEnElArray, 1);
+        document.querySelector('.botT').innerHTML = 'ADD TO PLAYLIST' ;
+        console.log(playlist);
+    } else{
+     playlist.push(idTrack);
+     document.querySelector('.botT').innerHTML = 'REMOVE FROM PLAYLIST' ;
+
+    }
+     let playlistParaStorage = JSON.stringify(playlist) ;
+     localStorage.setItem('playlist', playlistParaStorage) ;
+     console.log(localStorage) ;
+})
+
+
+     //-------------------
+    //  let agregar = document.querySelector('.botT') ;
+    //  agregar.addEventListener('click', function(){
+    //     if(recuperoStorage == null){
+    //         window.localStorage.setItem('playlist',JSON.stringify(playlist)) ;
+    //         console.log(localStorage)
+    //     }else{
+    //         let nuevaPlaylist = JSON.parse(recuperoStorage) 
+    //         nuevaPlaylist.push(data.id) ;
+    //         nuevaPlaylist=window.localStorage.setItem('playlist',JSON.stringify(nuevaPlaylist))
+    //         console.log(localStorage)
             
-        }
-        if(nuevaPlaylist.includes(idTrack)){
-            let indiceEnElArray = playlist.indexOf(idTrack);
-            playlist.splice(indiceEnElArray, 1);
-            document.querySelector('.botT').innerHTML = 'ADD TO PLAYLIST' ;
-            console.log(playlist);
-        }else{
-            playlist.push(idTrack);
-            document.querySelector('.botT').innerHTML = 'REMOVE FROM PLAYLIST' ;
-        }
-        agregar.innerHTML = 'REMOVE FROM PLAYLIST';
-        console.log(JSON.parse (recuperoStorage))
-
+    //     }
+    //     if(nuevaPlaylist.includes(idTrack)){
+    //         let indiceEnElArray = playlist.indexOf(idTrack);
+    //         playlist.splice(indiceEnElArray, 1);
+    //         document.querySelector('.botT').innerHTML = 'ADD TO PLAYLIST' ;
+    //         console.log(playlist);
+    //     }else{
+    //         playlist.push(idTrack);
+    //         document.querySelector('.botT').innerHTML = 'REMOVE FROM PLAYLIST' ;
+    //     }
+    //     agregar.innerHTML = 'REMOVE FROM PLAYLIST';
+    //     console.log(JSON.parse (recuperoStorage))
+ //------
 
     
 
@@ -163,10 +193,10 @@ fetch(url)
 
 
 
- })
- .catch(function(error){
-     console.log(error) ;
- })
+//  })
+//  .catch(function(error){
+//      console.log(error) ;
+//  })
  //Agrego para poder meter en la playlist
  
  

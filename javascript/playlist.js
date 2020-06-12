@@ -3,7 +3,7 @@ let playlist = JSON.parse(recuperoStorage);
 let playlistWrapper = document.querySelector('.playlistWrapper') ;
 console.log(playlist) ;
 
-if(recuperoStorage == null || recuperoStorage.length <= 0){
+if(recuperoStorage == null || recuperoStorage == "[]"){
     playlist = [] ;
     playlistWrapper.innerHTML += '<li> No hay canciones </li>' 
     console.log(playlistWrapper) ; 
