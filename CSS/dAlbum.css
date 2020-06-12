@@ -8,10 +8,7 @@ a{
 .header{
     display: grid;
     grid-template-columns: 20% 80%;
-    height: 50px;
     border-radius: 15px;
-    position: fixed;
-
 }
 .logo{
     width:100%;
@@ -52,7 +49,8 @@ i{
 .album {
     width: 100%;
     height: 500px;
-    background-color: rgb(53, 53, 53);
+    background-image: url(../img/grisOscuro.jpg);
+    background-size: 100%;
     margin-top: -60px;
     display: grid;
     grid-template-rows: 0.25fr 1fr 1fr;
@@ -97,7 +95,8 @@ font-size: 20px;
 .medio {
     margin-top: -65px;
     margin-left: 10px;
-    width: 200px;
+    margin-bottom: 10px;
+    width: 250px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -151,6 +150,8 @@ font-size: 20px;
     padding-right: 150px;
     margin-top: 100px;
 }
+
+
  
 .cancion a {
     font-size: 25px;
@@ -174,14 +175,20 @@ font-size: 20px;
 }
 
 
-.listado {
-  display: flex;
-  
+.listados li{
+  font-size: 40px;
+  color: gray;
+  text-align: start;
+  margin-bottom: 40px;
 }
+
+
+
 @media(min-width:320px){
     .header{
         height: 50px;
     }
+
     .logo{
         height: 60px;
         width: auto;
@@ -194,12 +201,13 @@ font-size: 20px;
         width: 70%;
         margin: auto;
     }
+    
     .footer{
         width: 80%;
     }
     .buscador{
         width: 25%;
-        margin-left: 70%;
+        margin-left: 75%;
     }
     .rankings{
         width: 70%;
@@ -210,9 +218,6 @@ font-size: 20px;
     .header{
         width: 50%;
     }
-    .rankings{
-        width: 50%;
-        margin: auto;
-    }
+
     
 }

@@ -1,6 +1,5 @@
 body{
-    background-image: url(../img/grisOscuro.jpg);
-    background-size: 100%;
+    background-color: black;
     font-family: 'Josefin Sans', sans-serif;
 
 }
@@ -27,7 +26,8 @@ a{
     border-radius: 15px;
 }
 .main{
-    background-color: rgb(15, 41, 65);
+    background-image: url(../img/grisOscuro.jpg);
+    background-size: 100%;
     margin-top: 50px;
     height: 600px;
     width: 100%;

@@ -39,22 +39,30 @@ fetch(url)
      //
      //  let player = document.querySelector('iframe') ;
      //  player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idTrack + '&app_id=1'
+    //  fotoChica.innerHTML = "<a href'dAlbum.html?id= " + data.album.id + "'> " +
+    //   "<img src = '" + data.album.cover_medium + "' alt= 'foto'>" + "<br>" + " <h5> "+ 
+    //   data.album.title + "</h5> " +" </a>" ;
      
+     //let player = document.querySelector('iframe') ;
+     //player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idTrack + '&app_id=1'
+    })
 
-     let playlist = [data]
+     let playlist = []
      let recuperoStorage = localStorage.getItem('playlist') ;
 
      let agregar = document.querySelector('.botT') ;
      agregar.addEventListener('click', function(){
-        if(recuperoStorage === null){
+        if(recuperoStorage == null){
             window.localStorage.setItem('playlist',JSON.stringify(playlist)) ;
+            console.log(localStorage)
         }else{
             let nuevaPlaylist = JSON.parse(recuperoStorage) 
-            nuevaPlaylist.push(data) ;
-            window.localStorage.setItem('playlist',JSON.stringify(nuevaPlaylist))
+            nuevaPlaylist.push(data.id) ;
+            nuevaPlaylist=window.localStorage.setItem('playlist',JSON.stringify(nuevaPlaylist))
+            console.log(localStorage)
             
         }
-        if(playlist.includes(idTrack)){
+        if(nuevaPlaylist.includes(idTrack)){
             let indiceEnElArray = playlist.indexOf(idTrack);
             playlist.splice(indiceEnElArray, 1);
             document.querySelector('.botT').innerHTML = 'ADD TO PLAYLIST' ;
@@ -67,7 +75,7 @@ fetch(url)
         console.log(JSON.parse (recuperoStorage))
 
 
-     })
+    
 
         
 
