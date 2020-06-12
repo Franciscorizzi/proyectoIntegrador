@@ -76,6 +76,7 @@ i{
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 4px 4px 10px black;
+
 }
 
 .subt {
@@ -90,8 +91,11 @@ i{
     margin-top: 20px;
    color: honeydew;
    font-size: 30px;
+   width: 250px;
    
 }
+
+
 
 .listado ul {
     display: flex;
