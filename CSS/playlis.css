@@ -163,7 +163,7 @@ h1{
 
 
 .footer{
-    background-color: aliceblue;
+    background-color: rgba(141, 141, 141, 0.294);
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 3fr 3fr 3fr 1fr 1fr;
@@ -197,6 +197,13 @@ i{
         width: auto;
         margin: auto;
     }
+    .main{
+        margin: auto
+    }
+    .primero{
+        margin: auto ;
+        width:auto ;
+    }
     
 }
     
@@ -212,12 +219,17 @@ i{
     }
     .buscador{
         width: 25%;
-        margin-left: 70%;
+        margin-left: 75%;
     }
     .main{
         display:grid;
+        margin: auto ;
+        width: 700px ;
         /* grid-template-columns: 1fr 1fr; */
-
+    }
+    .primero{
+        margin: auto ;
+        width:700px ;
     }
     
 }

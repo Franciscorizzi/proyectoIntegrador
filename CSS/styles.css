@@ -154,13 +154,18 @@ button{
     background-color: rgba(141, 141, 141, 0.294);
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 3fr 3fr 3fr;
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
     margin:auto;
     border-radius: 15px;
     text-align: justify;
     font-size: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.fab{
+    width: 10px;
+    font-size: 20px;
+    margin: 0 3px;
 }
 i{
     text-align: center;

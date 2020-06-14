@@ -5,14 +5,21 @@ console.log(playlist) ;
 
 if(recuperoStorage == null || recuperoStorage == "[]"){
     playlist = [] ;
-    playlistWrapper.innerHTML += '<li> No hay canciones </li>' 
+    playlistWrapper.innerHTML += '<h2> No hay canciones </h2>' 
     console.log(playlistWrapper) ; 
 }else{
     playlist.forEach(track => {
-            playlistWrapper.innerHTML += `<li>  <a href="dTrack.html?id= ${track.id } "> 
-              <audio controls><source src="${track.preview}"> </source> </audio> </li>`
-        });
+    playlistWrapper.innerHTML += `<li>  <a href="dTrack.html?id= ${track.id } "> <audio controls><source src="${track.preview}"> </source> </audio> </li>`
+         //{/* <p class = "id.name"> $ {track.album.title} </p> */}
+              
+     });
 }
+
+
+
+
+
+
 let clear = document.querySelector('.clear')
 clear.addEventListener('click', function(){
     window.localStorage.clear('playlist')
