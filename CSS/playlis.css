@@ -188,6 +188,13 @@ i{
 .deezer{
     width: 100px;
 }
+.datos{
+    color:black;
+    text-align: center ;
+}
+.audios{
+    color: red;
+}
 @media(min-width:320px){
     .header{
         height: 50px;

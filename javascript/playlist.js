@@ -5,7 +5,7 @@ console.log(playlist) ;
 
 if(recuperoStorage == null || recuperoStorage == "[]"){
     playlist = [] ;
-    playlistWrapper.innerHTML += '<h2> No hay canciones </h2>' 
+    playlistWrapper.innerHTML += '<h2> ¡No hay canciones! </h2>' 
     console.log(playlistWrapper) ; 
 }else{
     playlist.forEach(function(idTrack){
@@ -20,7 +20,7 @@ function buscarYMostrarTrack(idTrack){
         return response.json() ;
     })
     .then(function(track){
-        playlistWrapper.innerHTML+= '<li>' + '<a href="dTrack.html?id=' + track.id +'">'+ track.title_short +' '+ track.album.title +' '+ track.artist.name +'>' + '<audio controls><source src="'+ track.preview +'"></a></source></audio></li>'
+        playlistWrapper.innerHTML+= '<li>' + '<a href="dTrack.html?id=' + track.id +'" class= "datos">'+ track.title_short +' '+ track.album.title +' '+ track.artist.name +'>' + '<audio controls class="audios"><source src="'+ track.preview +'"class="audios"></a></source></audio></li>'
     })
 }
 
