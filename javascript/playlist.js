@@ -20,7 +20,7 @@ function buscarYMostrarTrack(idTrack){
         return response.json() ;
     })
     .then(function(track){
-        playlistWrapper.innerHTML+= '<li>' + '<a href="dTrack.html?id=' + track.id +'">'+ track.title +' '+ track.artist.name +'>' + '<audio controls><source src="'+ track.preview +'"></a></source></audio></li>'
+        playlistWrapper.innerHTML+= '<li>' + '<a href="dTrack.html?id=' + track.id +'">'+ track.title_short +' '+ track.album.title +' '+ track.artist.name +'>' + '<audio controls><source src="'+ track.preview +'"></a></source></audio></li>'
     })
 }
 
