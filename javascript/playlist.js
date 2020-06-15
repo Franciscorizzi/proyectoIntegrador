@@ -20,7 +20,10 @@ function buscarYMostrarTrack(idTrack){
         return response.json() ;
     })
     .then(function(track){
-        playlistWrapper.innerHTML+= '<li>' + '<a href="dTrack.html?id=' + track.id +'" class= "datos">'+ track.title_short +' '+ track.album.title +' '+ track.artist.name +'>' + '<audio controls class="audios"><source src="'+ track.preview +'"class="audios"></a></source></audio></li>'
+        playlistWrapper.innerHTML+= '<li>' + '<a href="dTrack.html?id=' + track.id +'" class= "nombreCancion">'+ track.title_short +'' 
+        + '<a href="dAlbum.html?id=' + track.album.id +'" class= "nAlbum">'+ track.album.title  +'' + 
+        '<a href="dArtista.html?id=' + track.artist.id +'" class= "aNombres">'+ track.artist.name + '' +
+        '<audio controls class="audios"><source src="'+ track.preview +'"class="audios"></a></source></audio></li>'
     })
 }
 
