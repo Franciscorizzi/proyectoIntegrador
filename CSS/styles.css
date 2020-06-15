@@ -37,12 +37,26 @@ a{
     color: white;
 }
 .buscador{
+    /* display:grid;
+    grid-template-columns: 20%  40%; */
     background-color: royalblue;
     width: 43%;
     height: 50%;
     margin-left: 58%;
     margin-top: 50px;
     border-radius: 15px;
+}
+.juego{
+    color: grey;
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 50px;
+    border-radius: 15px;
+
+}
+.juego:hover{
+    text-decoration-line: underline;
+    color: rgb(47, 46, 46) ;
 }
 form{
     display: grid;
