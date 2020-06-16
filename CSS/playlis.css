@@ -91,19 +91,19 @@ body{
  border-right: royalblue 2px solid;}
 h1{ 
     color: seashell;
-    align-content: center;
+    text-align: center;
     text-size-adjust: 24;
     text-shadow: seashell;
     font-size: 50px;
 }
 
-.clear{
+/* .clear{
     background-color: aliceblue;
     border: gainsboro 2px solid;
     height: 25px;
     width: 70px;
     border-radius: 15px;
-}
+} */
 .item{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -137,7 +137,11 @@ li{
     text-decoration-line: underline;
     color: rgb(190, 181, 181);
 }
-
+.noHay{
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
 
  p.audio{ 
      text-align: center;    
@@ -155,6 +159,7 @@ li{
     font-size: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 .fab{
     width: 10px;
