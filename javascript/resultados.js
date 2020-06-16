@@ -28,6 +28,9 @@ fetch(urlar)
     lista.innerHTML += "<li style='height: 50px;'>"+"<a href='dartista.html?id="+resultado.id+"'>" + resultado.name +"</a>"+"</li>";
    });
    titulo.innerHTML += "Estos fueron los resultados para '" + busqueda +"'";
+   if(busqueda !== resultados){
+       alert("¡Uy! ¡Que canción rara que quisiste buscar!");
+   }
 })
 .catch(function(error){
     console.log(error);

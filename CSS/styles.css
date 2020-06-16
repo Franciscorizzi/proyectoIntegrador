@@ -47,12 +47,14 @@ a{
     border-radius: 15px;
 }
 .juego{
-    color: grey;
     width: 20%;
     margin-left: 2%;
     margin-top: 50px;
     border-radius: 15px;
 
+}
+.juego a{  
+    color: grey;
 }
 .juego:hover{
     text-decoration-line: underline;
