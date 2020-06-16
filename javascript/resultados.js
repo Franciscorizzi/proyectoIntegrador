@@ -6,7 +6,7 @@ let querystringobj = new URLSearchParams(querystring);
 console.log(querystringobj);
 
 let busqueda = querystringobj.get("search");
-console.log(busqueda);
+console.log(typeof busqueda);
 
 let proxi = " https://cors-anywhere.herokuapp.com/";
 let urlar = proxi+ "https://api.deezer.com/search/artist?q="+ busqueda;
@@ -14,7 +14,9 @@ console.log(urlar);
 
 let titulo = document.querySelector(".enunciado");
 console.log(titulo);
-
+if(busqueda == ""){
+    alert("Te olvidaste de escribir algo")
+}
 
 fetch(urlar)
 .then(function(response){
@@ -28,9 +30,10 @@ fetch(urlar)
     lista.innerHTML += "<li style='height: 50px;'>"+"<a href='dartista.html?id="+resultado.id+"'>" + resultado.name +"</a>"+"</li>";
    });
    titulo.innerHTML += "Estos fueron los resultados para '" + busqueda +"'";
-   if(busqueda !== resultados){
+   if(resultados.length == 0){
        alert("¡Uy! ¡Que canción rara que quisiste buscar!");
    }
+
 })
 .catch(function(error){
     console.log(error);
