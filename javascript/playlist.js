@@ -20,29 +20,13 @@ function buscarYMostrarTrack(idTrack){
         return response.json() ;
     })
     .then(function(track){
-        playlistWrapper.innerHTML+= '<li>' + '<a href="dTrack.html?id=' + track.id +'" class= "nombreCancion">'+ track.title_short +'' 
+        playlistWrapper.innerHTML+= '<li class="item">' + '<audio controls class="audios"><source src="'+ track.preview +'"class="audi"></source></audio>'+
+        '<a href="dTrack.html?id=' + track.id +'" class= "nombreCancion">'+ track.title_short +'' 
         + '<a href="dAlbum.html?id=' + track.album.id +'" class= "nAlbum">'+ track.album.title  +'' + 
-        '<a href="dArtista.html?id=' + track.artist.id +'" class= "aNombres">'+ track.artist.name + '' +
-        '<audio controls class="audios"><source src="'+ track.preview +'"class="audios"></a></source></audio></li>'
+        '<a href="dArtista.html?id=' + track.artist.id +'" class= "aNombres">'+ track.artist.name + '' +"</a>"+
+        '</li>'
     })
 }
-
-
-
-
-
-
-
- {/* <p> <a href="dTrack.html?id=${track.id }" class="Song"> ${track.title_short}</p>
- <p class = "d.name"> $ {track.album.title} </p>
- <p><a href="dTrack.html?id= ${track.id } "></p>
- </div>
-   });
- } */}
-
-
-
-
 
 
 let clear = document.querySelector('.clear')

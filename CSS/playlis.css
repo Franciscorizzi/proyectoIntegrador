@@ -8,14 +8,18 @@
     height: auto;
     border-radius: 15px;
 }
+.borra{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
 a{
     text-decoration: none;
     color: black;
 }
 .container{
     display: grid;
-    grid-row: 1fr 1fr 5fr 2fr ;
-    height: 800px;
+    grid-row: 1fr 1fr 1fr 10fr 1fr ;
+    height: auto;
 }
 .opciones a{
     color: grey;
@@ -47,7 +51,7 @@ a{
 .buscador{
     background-color: royalblue;
     width: 43%;
-    height: 50%;
+    height: 50px;
     margin-left: 58%;
     margin-top: 50px;
     border-radius: 15px;
@@ -87,7 +91,6 @@ body{
  border-right: royalblue 2px solid;}
 h1{ 
     color: seashell;
-    text-align: center;
     align-content: center;
     text-size-adjust: 24;
     text-shadow: seashell;
@@ -97,101 +100,61 @@ h1{
 .clear{
     background-color: aliceblue;
     border: gainsboro 2px solid;
-    height: 110%;
+    height: 25px;
+    width: 70px;
     border-radius: 15px;
 }
-
-.main{ 
-    gap: 15px;
-    /* justify-content: space-around;  */
-    align-items: center;
-    border-radius: 10px;
-    margin-bottom: auto;
-    position: relative;
-    
+.item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-bottom: white 1px dotted;
+}
+.main a{
+    color: white;
 }
 
-.primero{ 
-    
-    background-image: url(../img/fondosi.JPG);
-    background-position: center;
-    justify-content: center;
-    color: whitesmoke;
-    text-align: center;
-    font-size: 25px;
-    margin: auto;
-    width: 1000px;
-    height: 500px;
-    align-items: center
-    
-    
-    font-family: 'Josefin Sans', sans-serif;
-    
-}
 .nombreCancion:hover{
     text-decoration-line: underline;
-    color: rgb(47, 46, 46);
+    color: rgb(190, 181, 181);
+}
+li{
+    color: white;
 }
 .aNombres{
-    padding-left: 8px;
+    text-align: left;
 }
+
 .aNombres:hover{
     text-decoration-line: underline;
-    color: rgb(47, 46, 46);
+    color: rgb(190, 181, 181);
 }
 
 .nAlbum{
     padding-left: 8px;
+    text-align: left;
 }
 .nAlbum:hover{
     text-decoration-line: underline;
-    color: rgb(47, 46, 46);
+    color: rgb(190, 181, 181);
 }
-/* .segundo{
-    
-    color:black;
-    font-size: 40px;
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: url(../img/latina.jpeg);
-    width: 320px;
-    height: 300px;
-    text-align: center;
-    margin: auto;
 
-    
- }
- .tercero{  
-     
-   
-     background-image: url(../img/fav.jpeg);
-     color: cornsilk;
-     font-size: 40px;
-     font-family: 'Josefin Sans', sans-serif;
-     width: 320px;
-     height: 300px;
-     text-align: center;
-     margin: auto;
-     
- } */
+
  p.audio{ 
-     
-     text-align: center;
-     
-
- }
+     text-align: center;    
+}
 
 
-.footer{
+ .footer{
     background-color: rgba(141, 141, 141, 0.294);
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 3fr 3fr 3fr 1fr 1fr;
-    margin: auto;
-    margin-top: 100px;
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+    margin:auto;
     border-radius: 15px;
     text-align: justify;
     font-size: 15px;
-    bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .fab{
     width: 10px;
@@ -212,9 +175,7 @@ i{
     color:black;
     text-align: center ;
 }
-.audios{
-    color: red;
-}
+
 @media(min-width:320px){
     .header{
         height: 50px;
@@ -223,13 +184,6 @@ i{
         height: 60px;
         width: auto;
         margin: auto;
-    }
-    .main{
-        margin: auto
-    }
-    .primero{
-        margin: auto ;
-        width:auto ;
     }
     
 }
@@ -248,26 +202,10 @@ i{
         width: 25%;
         margin-left: 75%;
     }
-    .main{
-        display:grid;
-        margin: auto ;
-        width: 700px ;
-        /* grid-template-columns: 1fr 1fr; */
-    }
-    .primero{
-        margin: auto ;
-        width:700px ;
-    }
     
 }
 @media(min-width:1024px){
     .header{
         width: 50%;
     }
-    .main{
-
-        display:grid;
-        /* grid-template-columns: 1fr 1fr 1fr; */
-    }
-
 }
