@@ -112,6 +112,9 @@ h1{
 .main a{
     color: white;
 }
+.main{
+    min-height:600px;
+}
 
 .nombreCancion:hover{
     text-decoration-line: underline;
