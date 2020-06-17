@@ -14,7 +14,9 @@ a{
     border-radius: 15px;
 }
 .logo{
-    width:100%;
+    width: 60px;
+    height: 60px;
+    margin-left: 300px;
 }
 .opciones{
     display: grid;
@@ -181,41 +183,126 @@ i{
 
 }
 
-@media(min-width:320px){
+@media(max-width:1024px){
     .header{
-
-        height: 50px;
+        width: 50%;
     }
-
-    
-
-    
-
-    .logo{
+     .logo{
         height: 60px;
         width: auto;
         margin: auto;
+        margin-left: 280px;
+    margin-top: 5px;
     }
 
+    .opciones {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 400px;
+    }
+    
+    .main {
+        margin-left: -140px;
+    background-image: none;
+
+    }
+
+    .track {
+       background-image: url(../img/grisOscuro.jpg);
+        margin-left: 30px;
+    }
+
+    .footer {
+        width: 85%;
+    }
+    
 }
-@media(min-width:768px){
+
+@media(max-width:768px){
     .header{
         width: 70%;
         margin: auto;
     }
 
-    
-
     .footer{
         width: 80%;
     }
-}
-@media(min-width:1026px){
-    .header{
-        width: 50%;
-    }
-    
 
-    
+    .logo{
+        height: 60px;
+        width: auto;
+        margin: auto;
+        margin-left: 50px;
+    margin-top: 5px;
+    }
+
+    .opciones {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 25px;
+    }
+
+    .main {
+        margin-left: -120px;
+    }
+}
+
+@media(max-width:320px){
+    .header{
+
+        height: 50px;
+    }
+
+    .opciones {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 140px;
+    }
+
+    .logo{
+        height: 60px;
+        width: auto;
+        margin: auto;
+        margin-left: -15px;
+        margin-top: 5px;
+    }
+
+    .fotoAlbumT img {
+        height: 300px;
+        width: 300px;
+    margin-left: 50px;
+    margin-top: -55px;
+    }
+
+    .derecha{
+        margin-top: 10px;
+    margin-left: 90px;
+    }
+
+    .botT {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .album img {
+        margin-top: 20px;
+    }
+
+    .track{
+        margin-left: 188px;
+        display: block;
+    }
+
+    h5{
+        margin: auto;
+    }
+
+    .footer {
+        width: 400px;
+    margin-left: 16px;
+    }
+
+
+
 }
     
