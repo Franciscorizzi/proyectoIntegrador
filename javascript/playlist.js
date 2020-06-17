@@ -5,7 +5,7 @@ console.log(playlist) ;
 
 if(recuperoStorage == null || recuperoStorage == "[]"){
     playlist = [] ;
-    playlistWrapper.innerHTML += '<h2> ¡No hay canciones! </h2>' 
+    playlistWrapper.innerHTML += '<h2 class="noHay"> ¡No hay canciones! </h2>' 
     console.log(playlistWrapper) ; 
 }else{
     playlist.forEach(function(idTrack){

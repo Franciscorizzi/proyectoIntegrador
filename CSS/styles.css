@@ -46,12 +46,20 @@ a{
     margin-top: 50px;
     border-radius: 15px;
 }
-.juego{
-    width: 20%;
+.encabezado{
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+.rere{
+    color: white;
+    font-size: 35px;
+    text-shadow: 2px 2px black;
+    font-style: italic;
+}
+.juego{   
     margin-left: 2%;
     margin-top: 50px;
     border-radius: 15px;
-
 }
 .juego a{  
     color: grey;
