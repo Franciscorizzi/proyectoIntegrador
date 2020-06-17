@@ -14,16 +14,24 @@ a{
     border-radius: 15px;
 }
 .logo{
-    width:100%;
+    width: 60px;
+    height: 60px;
+    margin-left: 300px;
 }
 .opciones{
-    background-color: aliceblue;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     text-align: center;
     width: auto;
     height: auto;
     border-radius: 15px;
+}
+.opciones a{
+    color: grey;
+    font-size: 25px;
+}
+.opciones a:hover {
+    color: white;
 }
 .main{
     background-image: url(../img/grisOscuro.jpg);
@@ -36,15 +44,20 @@ a{
     border-right: royalblue 2px solid;
 }
 .footer{
-    background-color: aliceblue;
+    background-color: rgba(141, 141, 141, 0.294);
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 3fr 3fr 3fr;
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
     margin: auto;
     margin-top: 100px;
     border-radius: 15px;
     text-align: justify;
-    font-size: 10px;
+    font-size: 15px;
+}
+.fab{
+    width: 10px;
+    font-size: 20px;
+    margin: 0 3px;
 }
 i{
     text-align: center;
@@ -170,9 +183,22 @@ i{
 
 }
 
-@media(max-width:1026px){
+@media(max-width:1024px){
     .header{
         width: 50%;
+    }
+     .logo{
+        height: 60px;
+        width: auto;
+        margin: auto;
+        margin-left: 280px;
+    margin-top: 5px;
+    }
+
+    .opciones {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 400px;
     }
     
     .main {
@@ -186,6 +212,9 @@ i{
         margin-left: 30px;
     }
 
+    .footer {
+        width: 85%;
+    }
     
 }
 
@@ -199,6 +228,20 @@ i{
         width: 80%;
     }
 
+    .logo{
+        height: 60px;
+        width: auto;
+        margin: auto;
+        margin-left: 50px;
+    margin-top: 5px;
+    }
+
+    .opciones {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 25px;
+    }
+
     .main {
         margin-left: -120px;
     }
@@ -210,15 +253,56 @@ i{
         height: 50px;
     }
 
-    
-
-    
+    .opciones {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 140px;
+    }
 
     .logo{
         height: 60px;
         width: auto;
         margin: auto;
+        margin-left: -15px;
+        margin-top: 5px;
     }
+
+    .fotoAlbumT img {
+        height: 300px;
+        width: 300px;
+    margin-left: 50px;
+    margin-top: -55px;
+    }
+
+    .derecha{
+        margin-top: 10px;
+    margin-left: 90px;
+    }
+
+    .botT {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .album img {
+        margin-top: 20px;
+    }
+
+    .track{
+        margin-left: 188px;
+        display: block;
+    }
+
+    h5{
+        margin: auto;
+    }
+
+    .footer {
+        width: 400px;
+    margin-left: 16px;
+    }
+
+
 
 }
     

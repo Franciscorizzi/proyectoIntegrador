@@ -17,8 +17,7 @@ fetch(url)
      trackT.style.textTransform = "uppercase" ;
 
      let nombreT = document.querySelector('.nombreT') ;
-     nombreT.innerHTML =  "<a href= '../HTML/dAlbum.html?id=" + data.title.id + "'>" +
-     "<h5>" + data.title + " </h5> </a>"
+     nombreT.innerHTML = "<h5>" + data.title + " </h5>";
 
      let artista = document.querySelector ('.artista') ;
      artista.innerHTML = "<a href= '../HTML/dArtista.html?id=" + data.artist.id + "'>" + 

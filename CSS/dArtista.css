@@ -13,16 +13,24 @@ a{
     border-radius: 15px;
 }
 .logo{
-    width:100%;
+    width: 60px;
+    height: 60px;
+    margin-left: 300px;
 }
 .opciones{
-    background-color: aliceblue;
     display: grid;
     grid-template-columns: 30% 30% 30%;
     text-align: center;
     width: auto;
     height: auto;
     border-radius: 15px;
+}
+.opciones a{
+    color: grey;
+    font-size: 25px;
+}
+.opciones a:hover {
+    color: white;
 }
 .main{
     width: 100%;
@@ -36,15 +44,20 @@ a{
     border-right: royalblue 2px solid;
 }
 .footer{
-    background-color: aliceblue;
+    background-color: rgba(141, 141, 141, 0.294);
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 3fr 3fr 3fr;
+    grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
     margin: auto;
     margin-top: 400px;
     border-radius: 15px;
     text-align: justify;
-    font-size: 10px;
+    font-size: 15px;
+}
+.fab{
+    width: 10px;
+    font-size: 20px;
+    margin: 0 3px;
 }
 i{
     text-align: center;
@@ -70,6 +83,7 @@ i{
     font-family: arial;
     font-size: 30px;
     text-align: center;
+    
 }
 
 .tipo {
@@ -105,6 +119,7 @@ i{
    font-size: 30px;
    margin-top: 80px;
    margin-left: 50px;
+   
 }
 
 .top5A .cancion a {
@@ -135,6 +150,8 @@ i{
     margin-top: 80px;
     margin-left: 50px;
     margin-bottom: 30px;
+    
+    
 }
 
 .albumes {
@@ -153,8 +170,61 @@ i{
     display: flex;
     color: rgb(238, 234, 234);
     justify-content: center;
+    width: 250px;
 }
-@media(min-width:320px){
+@media(max-width:1024px){
+    .header{
+        width: 50%;
+    }
+    
+    .logo{
+        height: 60px;
+        width: auto;
+        margin: auto;
+        margin-left: 320px;
+    margin-top: 5px;
+    }
+
+    .opciones {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 450px;
+    }
+
+    .main{
+        width: 1050px;
+    }
+}
+
+@media(max-width:768px){
+    .header{
+        width: 70%;
+        margin: auto;
+    }
+
+    .logo{
+        height: 60px;
+        width: auto;
+        margin: auto;
+        margin-left: 190px;
+    margin-top: 5px;
+    }
+
+    .opciones {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 230px;
+    }
+
+    .footer{
+        width: 80%;
+    }
+    
+    .main{
+        width: 1050px;
+    }
+}
+@media(max-width:320px){
     .header{
         height: 50px;
     }
@@ -162,33 +232,18 @@ i{
         height: 60px;
         width: auto;
         margin: auto;
+        margin-left: 222px;
+    margin-top: 5px;
     }
 
-}
-@media(min-width:768px){
-    .header{
-        width: 70%;
-        margin: auto;
+    .opciones {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 410px;
     }
-    .footer{
-        width: 80%;
+
+    .main {
+     width: 1050px;
     }
-    .buscador{
-        width: 25%;
-        margin-left: 70%;
-    }
-    .rankings{
-        width: 70%;
-        margin: auto;
-    }
-}
-@media(min-width:1024px){
-    .header{
-        width: 50%;
-    }
-    .rankings{
-        width: 50%;
-        margin: auto;
-    }
-    
+
 }

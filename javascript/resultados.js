@@ -28,10 +28,17 @@ fetch(urlar)
     lista.innerHTML += "<li style='height: 50px;'>"+"<a href='dartista.html?id="+resultado.id+"'>" + resultado.name +"</a>"+"</li>";
    });
    titulo.innerHTML += "Estos fueron los resultados para '" + busqueda +"'";
+   if(busqueda !== resultados){
+       alert("¡Uy! ¡Que canción rara que quisiste buscar!");
+   }
 })
 .catch(function(error){
     console.log(error);
 })
+
+
+
+
 
 let urlt = proxi+ "https://api.deezer.com/search/track?q="+ busqueda;
 
@@ -50,6 +57,12 @@ fetch(urlt)
 .catch(function(error){
     console.log(error);
 })
+
+
+
+
+
+
 
 let urlal = proxi+ "https://api.deezer.com/search/album?q="+ busqueda;
 
