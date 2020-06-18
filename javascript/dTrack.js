@@ -28,13 +28,15 @@ fetch(url)
      
      let fotoGrande = document.querySelector ('.fotoAlbumT') ;
      fotoGrande.innerHTML = "<a href = '../HTML/dAlbum.html?id= " + data.album.id + "'> " + 
-      "<img src= '" + data.album.cover_big + "' alt='foto'>" + "<br>" + " <h5> "
-      + data.album.title + "</h5> " +" </a> </img> " ;
+      "<img src= '" + data.album.cover_big + "' alt='foto'>" + " </a> </img> " ;
 
      let fotoChica = document.querySelector ('.album') ;
      fotoChica.innerHTML = "<a href = '../HTML/dAlbum.html?id= " + data.album.id + "'> " + 
      "<img src = '" + data.album.cover_medium + "' alt= 'foto'>" + "<br>" + " <h5> "
      + data.album.title + "</h5> " +" </a>" ;
+     let player = document.querySelector('iframe')
+     player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idTrack + '&app_id=1';
+
      //
      //  let player = document.querySelector('iframe') ;
      //  player.src = 'https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id=' + idTrack + '&app_id=1'
