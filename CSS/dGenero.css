@@ -14,7 +14,9 @@ a{
     z-index: 5;
 }
 .logo{
-    width:100%;
+    width: 60px;
+    height: 60px;
+    margin-left: 300px;
 }
 .opciones{
     display: grid;
@@ -117,18 +119,58 @@ i{
     margin: 40px 40px 40px 40px;
 }
 
-@media(min-width:320px){
+.nombre {
+    top: 40%;
+}
+
+@media(max-width:1024px){
     .header{
-        height: 50px;
+        width: 50%;
     }
+   
     .logo{
         height: 60px;
         width: auto;
         margin: auto;
+        margin-left: 280px;
+    margin-top: 5px;
     }
 
+    .opciones {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 400px;
+    }
+   
+    .listado ul li div img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .nombreArtistas a {
+        font-size: 20px;
+        text-align: start;
+        margin-left: -30px;
+    }
+
+    li {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 50px;
+       
+    }
+
+    .abajo {
+        margin-left: 50px;
+    }
+
+    .foto img {
+        width: 1200px;
+        height: 400px;
+    }
 }
-@media(min-width:768px){
+
+@media(max-width:768px){
     .header{
         width: 70%;
         margin: auto;
@@ -136,22 +178,99 @@ i{
     .footer{
         width: 80%;
     }
-    .buscador{
-        width: 25%;
-        margin-left: 70%;
+
+    .nombre h1 {
+        font-size: 1em;
+        margin-left: 120px;
+        
     }
-    .rankings{
-        width: 70%;
+
+    .logo{
+        height: 60px;
+        width: auto;
         margin: auto;
+        margin-left: 50px;
+    margin-top: 5px;
     }
-}
-@media(min-width:1024px){
-    .header{
-        width: 50%;
-    }
-    .rankings{
-        width: 50%;
-        margin: auto;
+
+    .opciones {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 25px;
     }
     
+    .listado ul li div img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .nombreArtistas a {
+        font-size: 20px;
+        text-align: start;
+        margin-left: -30px;
+    }
+
+    li {
+        width: 230px;
+        height: 230px;
+        margin-bottom: 50px;
+       
+    }
+
+
+    .abajo {
+        margin-left: -10px;
+    }
+
+    .foto img {
+        width: 900px;
+        height: 360px;
+    }
+}
+
+@media(max-width:320px){
+    .header{
+        height: 50px;
+    }
+    .logo{
+        height: 60px;
+        width: auto;
+        margin: auto;
+        margin-left: 50px;
+    margin-top: 5px;
+    }
+
+    .nombre {
+        width: 100px;
+        font-size: 70px;
+    }
+
+    .main {
+        width: 600px;
+    }
+
+    .opciones {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 225px;
+    }
+
+    li {
+        padding-left: 30px;
+    }
+
+    .listado ul li div img {
+        width: 210px;
+        height: 210px;
+    }
+
+    .foto img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .abajo {
+        margin-left: -40px;
+    }
+
 }
