@@ -6,7 +6,14 @@ a{
     text-decoration: none;
     color: black;
 } 
+.container{
+    display: grid;
+    grid-template-rows: 1fr 20fr 1fr;
+    height: 3300px;
+}
 .header{
+    position: relative;
+    z-index: 100px;
     display: grid;
     grid-template-columns: 20% 80%;
     height: 50px;
@@ -47,7 +54,7 @@ a{
     width: 100%;
     grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
     margin: auto;
-    margin-top: 400px;
+    margin-top: 50px;
     border-radius: 15px;
     text-align: justify;
     font-size: 15px;
@@ -180,9 +187,6 @@ i{
         width: auto;
         margin: auto;
     }
-    .main{
-    width: 340%;
-    }
 
     .albumes{
     display: grid;
@@ -202,12 +206,11 @@ i{
         width: 70%;
         margin: auto;
     }
-    
+    .container{
+        height: 1900px;
+    }
     .footer{
         width: 80%;
-    }
-    .main{
-        width: 140%;
     }
 
     .albumes{
@@ -229,11 +232,5 @@ i{
 @media(min-width:1024px){
     .header{
         width: 50%;
-    }
-
-    
-    
-    .main{
-        width: 100%;
     }
 }

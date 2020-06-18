@@ -198,6 +198,8 @@ font-size: 20px;
   margin-bottom: 40px;
 }
 
+
+
 @media(min-width:320px){
     .header{
         height: 50px;
@@ -210,8 +212,6 @@ font-size: 20px;
     }
 
 }
-
-
 @media(min-width:768px){
     .header{
         width: 70%;
@@ -221,10 +221,11 @@ font-size: 20px;
     .footer{
         width: 80%;
     }
-    
+    .buscador{
+        width: 25%;
+        margin-left: 75%;
+    }
 }
-
-
 @media(min-width:1024px){
     .header{
         width: 50%;
