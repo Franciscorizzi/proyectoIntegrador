@@ -184,65 +184,55 @@ i{
 
 }
 
-@media(max-width:1024px){
+@media(min-width:320px){
     .header{
-        width: 50%;
-    }
-     .logo{
-        height: 60px;
-        width: auto;
-        margin: auto;
-        margin-left: 280px;
-    margin-top: 5px;
-    }
-
-    .opciones {
-        display: flex;
-        justify-content: space-around;
-        margin-left: 400px;
-    }
-    
-    .main {
-        margin-left: -140px;
-    background-image: none;
-
-    }
-
-    .track {
-       background-image: url(../img/grisOscuro.jpg);
-        margin-left: 30px;
-    }
-
-    .footer {
-        width: 85%;
-    }
-    
-}
-
-@media(max-width:768px){
-    .header{
-        width: 70%;
-        margin: auto;
-    }
-
-    .footer{
-        width: 80%;
+        height: 50px;
     }
 
     .logo{
         height: 60px;
         width: auto;
         margin: auto;
-        margin-left: 50px;
-    margin-top: 5px;
+    }
+    .fotoAlbumT img {
+        height: 300px;
+        width: 300px;
+    margin-left: 50px;
+    margin-top: -55px;
+    }
+    .derecha{
+        margin-top: 10px;
+    margin-left: 90px;
+    }
+    .botT {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    .album img {
+        margin-top: 20px;
+    }
+    .track{
+        margin-left: 188px;
+        display: block;
+    }
+    h5{
+        margin: auto;
     }
 
-    .opciones {
-        display: flex;
-        justify-content: space-around;
-        margin-left: 25px;
+    .antes {
+        width: 15%;
+    }
+   
+    .main{
+        width: 215%;
+        height: 800px;
     }
 
+    .footer{
+        width: 80%;
+    }
+
+<<<<<<< HEAD
     .main {
         margin-left: -120px;
     }
@@ -251,64 +241,72 @@ i{
         width: 30%;
         margin-right: auto;
     }
+=======
+>>>>>>> 7852a775a09d9ba41761ce620a40036cb4741824
 }
 
-@media(max-width:320px){
+
+@media(min-width:768px){
     .header{
-
-        height: 50px;
-    }
-
-    .opciones {
-        display: flex;
-        justify-content: space-around;
-        margin-left: 140px;
-    }
-
-    .logo{
-        height: 60px;
-        width: auto;
+        width: 70%;
         margin: auto;
-        margin-left: -15px;
-        margin-top: 5px;
+    }
+    
+    .footer{
+        width: 80%;
+    }
+
+    .track{
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 
     .fotoAlbumT img {
-        height: 300px;
-        width: 300px;
-    margin-left: 50px;
-    margin-top: -55px;
+        height: 400px;
+        width: 400px;
+        
+    }
+    
+    .izq{
+        margin-right: 30px;
+        margin-left: -50px;
     }
 
     .derecha{
-        margin-top: 10px;
-    margin-left: 90px;
+        margin-left: -10px;
     }
-
     .botT {
         margin-top: 30px;
         margin-bottom: 10px;
     }
-
     .album img {
-        margin-top: 20px;
+        
+    }
+    
+    .antes {
+       
+    }
+   
+    .main{
+       height: 600px;
+    }
+}
+
+
+@media(min-width:1024px){
+    .header{
+        width: 50%;
     }
 
-    .track{
-        margin-left: 188px;
-        display: block;
+    .track {
+        margin-left: 400px;
     }
 
-    h5{
-        margin: auto;
+    .derecha{
+        margin-top: 60px;
     }
-
-    .footer {
-        width: 400px;
-    margin-left: 16px;
-    }
-
-
-
+    
 }
     

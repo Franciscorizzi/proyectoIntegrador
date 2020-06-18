@@ -28,8 +28,7 @@ fetch(url)
      
      let fotoGrande = document.querySelector ('.fotoAlbumT') ;
      fotoGrande.innerHTML = "<a href = '../HTML/dAlbum.html?id= " + data.album.id + "'> " + 
-      "<img src= '" + data.album.cover_big + "' alt='foto'>" + "<br>" + " <h5> "
-      + data.album.title + "</h5> " +" </a> </img> " ;
+      "<img src= '" + data.album.cover_big + "' alt='foto'>" + " </a> </img> " ;
 
      let fotoChica = document.querySelector ('.album') ;
      fotoChica.innerHTML = "<a href = '../HTML/dAlbum.html?id= " + data.album.id + "'> " + 
