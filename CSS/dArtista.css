@@ -13,9 +13,7 @@ a{
     border-radius: 15px;
 }
 .logo{
-    width: 60px;
-    height: 60px;
-    margin-left: 300px;
+    width: 100%;
 }
 .opciones{
     display: grid;
@@ -172,78 +170,70 @@ i{
     justify-content: center;
     width: 250px;
 }
-@media(max-width:1024px){
+@media(min-width:320px){
     .header{
-        width: 50%;
+        height: 50px;
     }
-    
+
     .logo{
         height: 60px;
         width: auto;
         margin: auto;
-        margin-left: 320px;
-    margin-top: 5px;
     }
-
-    .opciones {
-        display: flex;
-        justify-content: space-around;
-        margin-left: 450px;
-    }
-
     .main{
-        width: 1050px;
+    width: 340%;
     }
+
+    .albumes{
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr;
+    gap: 50px;
+    }
+
+    .albumes img {
+        width: 400px;
+        height: 400px;
+    }
+    
 }
 
-@media(max-width:768px){
+@media(min-width:768px){
     .header{
         width: 70%;
         margin: auto;
     }
-
-    .logo{
-        height: 60px;
-        width: auto;
-        margin: auto;
-        margin-left: 190px;
-    margin-top: 5px;
-    }
-
-    .opciones {
-        display: flex;
-        justify-content: space-around;
-        margin-left: 230px;
-    }
-
+    
     .footer{
         width: 80%;
     }
+    .main{
+        width: 140%;
+    }
+
+    .albumes{
+        display: block;
+        
+        }
+
+        .albumes{
+            display: flex;
+        }
+
+        .albumes img {
+            width: 200px;
+            height: 200px;
+        }  
+}
+
+
+@media(min-width:1024px){
+    .header{
+        width: 50%;
+    }
+
+    
     
     .main{
-        width: 1050px;
+        width: 100%;
     }
-}
-@media(max-width:320px){
-    .header{
-        height: 50px;
-    }
-    .logo{
-        height: 60px;
-        width: auto;
-        margin: auto;
-        margin-left: 222px;
-    margin-top: 5px;
-    }
-
-    .opciones {
-        display: flex;
-        justify-content: space-around;
-        margin-left: 410px;
-    }
-
-    .main {
-     width: 1050px;
-    }
-
 }
