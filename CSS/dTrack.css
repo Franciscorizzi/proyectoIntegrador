@@ -162,6 +162,7 @@ i{
     border-radius: 30px;
     padding: 20px 30px 20px 30px;
     border: none;
+    margin-bottom: 10px;
 }
 
 
@@ -231,6 +232,17 @@ i{
         width: 80%;
     }
 
+<<<<<<< HEAD
+    .main {
+        margin-left: -120px;
+    }
+    
+    .musi{
+        width: 30%;
+        margin-right: auto;
+    }
+=======
+>>>>>>> 7852a775a09d9ba41761ce620a40036cb4741824
 }
 
 
