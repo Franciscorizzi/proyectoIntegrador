@@ -167,7 +167,6 @@ i{
     border-radius: 30px;
     padding: 20px 30px 20px 30px;
     border: none;
-    margin-bottom: 10px;
 }
 
 
@@ -232,15 +231,14 @@ i{
         width: 110%;
     }
 
-
     .main {
         margin-left: -120px;
     }
     
-    .musi{
-        width: 30%;
+    /* .musi{
+        width: 40%;
         margin-right: auto;
-    }
+    } */
 }
 
 
