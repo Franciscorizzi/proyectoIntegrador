@@ -162,6 +162,7 @@ i{
     border-radius: 30px;
     padding: 20px 30px 20px 30px;
     border: none;
+    margin-bottom: 10px;
 }
 
 
@@ -244,6 +245,11 @@ i{
 
     .main {
         margin-left: -120px;
+    }
+    
+    .musi{
+        width: 30%;
+        margin-right: auto;
     }
 }
 
