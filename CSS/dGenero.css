@@ -6,6 +6,11 @@ a{
     text-decoration: none;
     color: black;
 } 
+.container{
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+    height: 1500px;
+}
 .header{
     display: grid;
     grid-template-columns: 20% 80%;
@@ -34,16 +39,19 @@ a{
 .op{
     border-right: royalblue 2px solid;
 }
+
+
 .footer{
     background-color: rgba(141, 141, 141, 0.294);
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
-    margin: auto;
-    margin-top: 100px;
+    margin:auto;
     border-radius: 15px;
     text-align: justify;
     font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .fab{
     width: 10px;
@@ -66,7 +74,6 @@ i{
 }
 
 .foto img{
-    width: 100%;
     height: 500px;
     filter: blur(5px); 
     margin-top: 30px;
@@ -81,6 +88,7 @@ i{
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 4px 4px 10px black;
+    margin-left: 100px;
 
 }
 
@@ -122,9 +130,6 @@ i{
 }
 
 @media(min-width:320px){
-    .header{
-        height: 50px;
-    }
 
     .logo{
         height: 60px;
@@ -163,6 +168,9 @@ i{
         width: 70%;
         margin: auto;
     }
+    .foto img{
+        width: 100%;
+    }
     
     .footer{
         width: 80%;
@@ -179,7 +187,9 @@ i{
     .listado ul li div {
        width: 232px;
     }
-
+    .nombre{
+        margin-left: 0px;
+    }
 
     .nombreArtistas a {
         font-size: 30px;
@@ -187,6 +197,9 @@ i{
         justify-content: center;
         margin-left: -20px;
         width: 250px;
+    }
+    .container{
+        height: 200px;
     }
 }
 
@@ -203,7 +216,10 @@ i{
 .artistas{
     margin: 10px 10px 70px 10px;
 }
-
+.abajo{
+    width: 90%;
+    margin: auto;
+}
 
 .listado ul li div {
    width: 232px;

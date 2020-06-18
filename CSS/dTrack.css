@@ -216,7 +216,7 @@ i{
         margin-top: 20px;
     }
     .track{
-        margin-left: 188px;
+        margin-left: 300px;
         display: block;
     }
     h5{
@@ -235,6 +235,7 @@ i{
         margin-left: -120px;
     }
     
+
 }
 
 
@@ -256,6 +257,7 @@ i{
         display: grid;
         margin-top: 50px;
         margin-bottom: 30px;
+        margin-left: 500px;
     }
 
     .fotoAlbumT img {
@@ -290,7 +292,7 @@ i{
     }
 
     .track {
-        margin-left: 400px;
+        margin-left: 500px;
     }
 
     .derecha{
